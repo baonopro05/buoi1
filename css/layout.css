@@ -431,14 +431,13 @@ header {
 .footer {
   background: url('../img/tau.jpg') no-repeat center center/cover;
   color: white;
-  font-family: Arial, sans-serif;
 }
 
 .footer-content {
   padding: 0px 100px;
   padding-bottom: 30px;
   display: flex;
-  gap: 30px;
+  /* gap: 30px; */
 }
 
 .footer-box-in {
