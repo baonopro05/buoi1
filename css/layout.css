@@ -24,7 +24,7 @@ header {
 }
 .logo img {
   width: 100px;
-  left: auto;
+  left:50px ;
   padding: 0;
   margin: 0;
   position: absolute;
@@ -291,8 +291,8 @@ header {
 .map-container {
   /* width: 100%; */
   /* max-width: 1000px; */
-  padding: 50px 100px;
-  border-radius: 8px;
+  padding: 40px 100px;
+  /* border-radius: 8px; */
   overflow: hidden;
 }
 
@@ -371,7 +371,7 @@ header {
   display: flex;
   justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 30px;
+  gap: 10px;
   
 }
 .news-item {
@@ -554,9 +554,9 @@ img:hover {
   filter: brightness(1.1);
   transition: all 0.3s ease;
 }
-/* nav bar */
 
-/* nav 3 gạch */
+
+/* nav bar 3 gạch */
 .nav__bars{
   /* border: 1px solid red; */
   width: 28px;
@@ -565,7 +565,7 @@ img:hover {
   right: 0;
   color: #dddddd;
   display: none;
-  margin-left: 8px;
+  margin-left: 200px;
 }
 
 .nav__overlay{
@@ -583,8 +583,9 @@ img:hover {
   position: fixed;
   top: 0;
   right: 0;
+  /* left: 0; */
   bottom: 0;
-  width: 320px;
+  width: 270px;
   max-width: 100%;
   z-index: 999px;
   background-color: #cccccc;
@@ -624,6 +625,7 @@ img:hover {
   transform: translateX(0%);
   opacity: 1;
 }
+
 @media (max-width:1020px){
   .nav__bars{
     display: block;
@@ -648,7 +650,7 @@ img:hover {
 
 /* resposive */
 /* Responsive cho Tablet (iPad) */
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .search-box {
     position: relative;
     left: auto;
@@ -713,16 +715,25 @@ img:hover {
 
 @media (max-width: 480px) {
   .logo img {
-    width: 80px;
+    width: 50px;
+    left:20px ;
+    padding: 0;
+    margin: 0;
+    position: absolute;
   }
 
-  nav {
+  .mnu {
+    display: flex;
+    height: 20px;
+    align-items: center; /* Thêm dòng này để căn giữa theo chiều dọc */
+    color: white;
+    gap: 20px;
     padding: 10px;
     flex-direction: column;
     align-items: center;
   }
 
-  nav ul {
+  .mnu ul {
     flex-direction: column;
     gap: 10px;
   }
