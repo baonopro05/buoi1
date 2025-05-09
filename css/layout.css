@@ -117,7 +117,7 @@ header {
 .search-box input {
   padding: 0px 12px;
   border: none;
-  border-radius: 4px 0 0 4px;
+  border-radius: 8px 0 0 8px;
   width: 200px;
   height: 42.5px;
 }
@@ -126,7 +126,7 @@ header {
   height: 42.5px;
   background: #ffc107;
   border: none;
-  border-radius: 0 4px 4px 0;
+  border-radius: 0 8px 8px 0;
   cursor: pointer;
 }
 .search-box button img{
@@ -258,18 +258,16 @@ header {
 /* Dịch vụ */
 .services {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 40px;
   padding: 50px 100px;
-  max-width: 1200px;
-  /* margin: auto; */
+
   text-align: center;
 }
 .service-item {
+    max-width: 1200px;
   text-align: center;
-  /* text-align: left; */
   padding: 15px;
-  /* border: 1px solid red; */
 }  
 .service-item img {
   width: 100px;
@@ -446,21 +444,23 @@ header {
 .footer-box-in {
   width: 680px;
   background-color: rgba(48, 47, 56, 0.411);
-  padding: 40px 30px;
+  padding: 30px 30px;
 }
 .footer-box-in h3{
   font-size: 25px;
   text-align: center;
 }
 .footer-box-in p{
+  margin: 0px 20px;
   font-size: 15px;
+  text-align: start;
 }
 .footer-box-in hr{
-  margin-top: 80px;
+  margin-top: 70px;
   margin-bottom: 30px;
 }
 .hr-ngang {
-  margin: 35px 0px;
+  margin: 25px 0px;
   height: 3px;
   width: 110px;
   margin-left: 30%;
@@ -480,14 +480,10 @@ header {
   filter: brightness(0) invert(1); /* icon trắng */
 }
 
-.footer-box-in .footer-bottom {
+.footer-bottom p{
   padding-top: 20px;
   text-align: center;
-  font-weight: bold;
-  font-size: 12px;
-  color: #cccccc;
 }
-
 /*  */
 .footer-box-out{
   width: 100%;
@@ -498,7 +494,7 @@ header {
 /*  */
 .footer-box-int{
   display: flex;
-  padding: 40px 0px;
+  padding: 25.4px 0px;
 }
 .box-into {
 width: 50%;
@@ -511,7 +507,7 @@ width: 50%;
 
 .box-into h4{
   text-align: center;
-  padding: 26px 0px;
+  padding: 20px 0px;
 }
 
 .box-into ul {
@@ -537,9 +533,9 @@ width: 50%;
 
 }
 .footer-box-ynt img{
-  padding-top: 20px;
+  padding-top: 10px;
   width: 50%;
-  height: 168px;
+  height: 158px;
 }
 
 
