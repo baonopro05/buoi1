@@ -258,8 +258,8 @@ header {
 /* Dịch vụ */
 .services {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  /* gap: 40px; */
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 40px;
   padding: 50px 100px;
   /* max-width: 1000px; */
   /* margin: auto; */
