@@ -1,0 +1,407 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  line-height: 1.6;
+}
+/* Thanh điều hướng */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #309ac4;
+  display: flex;
+  color: white;
+  justify-content: space-evenly;
+}
+
+.logo img {
+  width: 100px;
+  left: auto;
+  padding: 0;
+  margin: 0;
+  /* display: block; */
+  position: absolute;
+}
+
+nav {
+  display: flex;
+  align-items: center; /* Thêm dòng này để căn giữa theo chiều dọc */
+  padding: 15px 60px;
+  color: white;
+  flex-wrap: wrap;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center; /* Thêm dòng này */
+}
+
+nav ul li a {
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background 0.3s;
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #fbff07;
+  box-shadow: 1px 1px 1px 1px rgba(198, 247, 64, 0.74);
+}
+
+/* Icon phải */
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-left: 90px;
+}
+
+.search-icon img {
+  width: 20px;
+  cursor: pointer;
+  filter: brightness(0) invert(1); /* icon trắng */
+}
+
+.lang-btn {
+  font-weight: 500;
+  width: 40px;
+  height:25px;
+  background-color: rgba(69, 69, 163, 0.199);
+  color: white;
+  border: 1px solid wheat;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.nav-icons button:hover{
+  transform: scale(1.1); /* phóng to vật thể lên*/
+  filter: brightness(1.1);
+  transition: all 0.3s ease;
+  background-color: #50abcfbe;
+}
+
+    /* Ảnh nền */
+.sub {
+  background-image: url('../img/banner1.webp');
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  position: relative;
+
+  display: flex;              /* dùng flex để canh giữa nội dung */
+  justify-content: center;    /* canh giữa theo chiều ngang */
+  align-items: center;        /* canh giữa theo chiều dọc */
+}
+
+.sub p {
+  font-size: 50px;
+  color: white;               /* tùy chọn để dễ đọc nếu ảnh nền tối */
+  margin: 0;
+}
+    
+/* icon góc trên*/
+.sidebar-icons{
+  position: absolute;  /* hoặc fixed nếu muốn đứng yên khi cuộn */
+  top: 25vw;           /* điều chỉnh con số này để căn đúng ngang tiêu đề */
+  right: 0;
+  display: flex;
+}
+.icon-list {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  box-shadow: 0 0 5px rgb(46, 43, 43);
+  z-index: 999;
+  gap: 10px;
+}
+.ts{
+  border-bottom: 1px solid rgb(10, 10, 10);
+  padding-bottom: 5px;
+}
+.icon-list img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.toggle-btn{
+  text-align: center;
+  width: 30px;
+  height: 16px;
+  background-color: rgb(38, 64, 209);
+  color: #dddddd;
+}
+/*  */
+/* icon dưới */
+.floating-icons {
+  position: absolute;
+  top: 56vw;
+  right: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  z-index: 9999; /* Đảm bảo nổi lên trên các thành phần khác */
+}
+
+.floating-icons .icon img {
+  border: 1px solid black;
+  border-radius: 50px;
+  width: 38px;
+  height: 38px;
+  cursor: pointer;
+  filter: brightness(2) saturate(300%) invert(36%) sepia(188%) saturate(482%) hue-rotate(160deg) brightness(110%) contrast(100%);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover: hiệu ứng phóng to–thu nhỏ + bóng đổ vàng */
+.floating-icons .icon img:hover {
+  animation: pulse 1.2s infinite;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.8); /* bóng màu vàng */
+}
+
+/* Keyframes tạo hiệu ứng "nhịp đập" */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+ /* kho hang */
+.khohang-wrapper {
+  /* padding: 0px 100px; */
+  display: flex;
+  justify-content: center;
+  gap: 0px; /* tạo khoảng cách giữa ảnh và icon */
+  align-items: flex-start;
+}
+
+.khohang{
+    margin: 50px auto;
+    text-align: center;
+    position: relative;
+}
+.khohang img{
+    height: auto;
+    width: 100%;
+    max-width: 1200px;
+    display: block;
+
+}
+.button-group {
+  position: absolute;
+  top: 19%;
+  left: 47%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1100px;
+  padding: 0 275px;
+  gap: 45px;
+  
+}
+  
+.left-column{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.menu {
+  position: relative;
+}
+.menu .kh6{
+  margin-left: 60px;
+}
+.menu > button {
+  width: 160px;
+  padding: 7px 20px;
+  background-color: rgba(192, 203, 216, 0.226);
+  color: rgb(255, 255, 255);
+  border: 1px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.menu > button:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+  color: rgb(55, 113, 189);
+  background-color: #f5f1f19d;
+}
+
+.menu-con {
+  display: none;
+  position: absolute;
+  top: 110%;
+  left: 0;
+  background-color: #f5f4f4c0;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 100;
+  flex-direction: column;
+  min-width: 180px;
+  padding: 10px;
+  color: white;
+}
+.menu-con h4{
+  border-bottom: 1px solid black;
+  font-weight: bold;
+  color: #309ac4;
+}
+.menu-con .status-dot{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: red;
+  border-radius: 50%;
+  margin-right: 4px;
+}
+.menu-con p{
+  color: #70767c;
+  text-align: start;
+}
+.menu:hover .menu-con {
+  display: flex;
+}
+
+
+
+
+/* footer */
+
+.footer {
+  background: url('../img/Paner.jpg') no-repeat center center/cover;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.footer-content {
+  padding: 0px 100px;
+  padding-bottom: 30px;
+  display: flex;
+  gap: 30px;
+}
+
+.footer-box-in {
+  width: 680px;
+  background-color: rgba(48, 47, 56, 0.411);
+  padding: 40px 30px;
+}
+.footer-box-in h3{
+  font-size: 25px;
+  text-align: center;
+}
+.footer-box-in p{
+  font-size: 15px;
+}
+.footer-box-in hr{
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+.hr-ngang {
+  margin: 35px 0px;
+  height: 3px;
+  width: 110px;
+  margin-left: 30%;
+  background-color: #dddddd;
+}
+
+.footer-box-in .social-icons {
+  display: flex;
+  justify-content: center;
+}
+.footer-box-in .social-icons img {
+  border-radius: 6px;
+  border: 1px solid red;
+  padding: 5px 5px;
+  width: 30px;
+  margin-right: 10px;
+  filter: brightness(0) invert(1); /* icon trắng */
+}
+
+.footer-box-in .footer-bottom {
+  padding-top: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 12px;
+  color: #cccccc;
+}
+
+/*  */
+.footer-box-out{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/*  */
+.footer-box-int{
+  display: flex;
+  padding: 40px 0px;
+}
+.box-into {
+width: 50%;
+}
+.box-into img{
+  margin: 0px 37%;
+  width: 70px;
+  filter: brightness(0) invert(1);
+}
+
+.box-into h4{
+  text-align: center;
+  padding: 26px 0px;
+}
+
+.box-into ul {
+  list-style: none;
+  padding: 0;
+}
+.box-into ul li {
+  margin-bottom: 8px;
+}
+.box-into ul li a {
+  margin: 22%;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #dddddd;
+  text-decoration: none;
+}
+
+/*  */
+.footer-box-ynt {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+}
+.footer-box-ynt img{
+  padding-top: 20px;
+  width: 50%;
+  height: 168px;
+}

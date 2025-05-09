@@ -1,0 +1,584 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  line-height: 1.6;
+}
+/* Thanh điều hướng */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #309ac4;
+  display: flex;
+  color: white;
+  justify-content: space-evenly;
+}
+
+.logo img {
+  width: 100px;
+  left: auto;
+  padding: 0;
+  margin: 0;
+  /* display: block; */
+  position: absolute;
+}
+
+nav {
+  display: flex;
+  align-items: center; /* Thêm dòng này để căn giữa theo chiều dọc */
+  padding: 15px 60px;
+  color: white;
+  flex-wrap: wrap;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center; /* Thêm dòng này */
+}
+
+nav ul li a {
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background 0.3s;
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #fbff07;
+  box-shadow: 1px 1px 1px 1px rgba(198, 247, 64, 0.74);
+}
+/* Icon phải */
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-left: 90px;
+}
+
+.search-icon img {
+  width: 20px;
+  cursor: pointer;
+  filter: brightness(0) invert(1); /* icon trắng */
+}
+
+.lang-btn {
+  font-weight: 500;
+  width: 40px;
+  height:25px;
+  background-color: rgba(69, 69, 163, 0.199);
+  color: white;
+  border: 1px solid wheat;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.nav-icons button:hover{
+  transform: scale(1.1); /* phóng to vật thể lên*/
+  filter: brightness(1.1);
+  transition: all 0.3s ease;
+  background-color: #50abcfbe;
+}
+
+/* Ảnh nền */
+.sub {
+  background-image: url('../img/banner1.webp');
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  position: relative;
+
+  display: flex;              /* dùng flex để canh giữa nội dung */
+  justify-content: center;    /* canh giữa theo chiều ngang */
+  align-items: center;        /* canh giữa theo chiều dọc */
+}
+
+.sub p {
+  font-size: 50px;
+  color: white;               /* tùy chọn để dễ đọc nếu ảnh nền tối */
+  margin: 0;
+}
+    
+
+
+.breadcrumb p {
+  font-size: 16px;
+  color: #666;
+  padding: 10px 100px;
+}
+
+
+.table-wrapper {
+  padding: 70px 100px;
+  overflow-x: auto;
+  background-color: rgba(94, 91, 91, 0.137);
+  border-radius: 5px;
+  /* padding: 10px; */
+  width: 100%;
+  max-width: 100vw;
+}
+
+.tabs button {
+  width: 150px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #0b59eb;
+  border-radius: 5px 5px 0 0;
+  font-weight: bold;
+}
+
+.tabs button.active {
+  background-color: #ffc107;
+  color: #fff;
+}
+
+.rito{
+  overflow-x: auto;
+  width: 100%;
+  padding: 0px 40px;
+  background-color: #ffffff;
+}
+
+.rito .date-header {
+  color: #007bff;
+  margin: 5px  10px;
+}
+
+.rito table {
+  width: 100%;
+  min-width: 600px; /* Đặt chiều rộng tối thiểu để tránh bị bóp quá nhỏ */
+  border-collapse: collapse;
+  table-layout: auto;
+  font-size: 14px;
+  border: 1px solid red;
+  font-weight: bold;
+}
+
+thead {
+  background-color: #007bff;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.red {
+  color: red;
+}
+.blue{
+  font-weight: bolder;
+  color: rgb(16, 124, 226);
+}
+.brown{
+  color: brown;
+}
+
+/*  */
+
+.support {
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  justify-content: space-around;
+  background-color: white;
+}
+.support-item{
+  width: 100%;
+}
+
+.hys{
+  padding-top: 100px;
+  display: flex;
+  width: 300px;
+  /* background-color: #333; */
+  margin: auto;
+}
+.hys hr{
+  border: none;
+  margin: auto;
+  height: 5px;
+  background-color: #efff10cc;
+  width: 100px;
+}
+.hys h4{
+  text-align: center;
+  color: #309ac4;
+  width: 1000px;
+}
+
+.support-item {
+  text-align: center;
+  margin: 10px;
+}
+
+.support-item p {
+  margin: 0;
+}
+
+.orange {
+  color: #ff9800;
+}
+
+
+/* icon góc */
+.sidebar-icons{
+  position: absolute;  /* hoặc fixed nếu muốn đứng yên khi cuộn */
+  top: 410px;           /* điều chỉnh con số này để căn đúng ngang tiêu đề */
+  right: 0;
+  display: flex;
+}
+.icon-list {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(248, 247, 247);
+  padding: 10px;
+  /* box-shadow: 0 0 5px rgba(211, 208, 44, 0.1); */
+  z-index: 999;
+  gap: 10px;
+}
+.ts{
+  border-bottom: 1px solid rgb(10, 10, 10);
+  padding-bottom: 5px;
+}
+.icon-list img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.toggle-btn{
+  text-align: center;
+  width: 30px;
+  height: 16px;
+  background-color: rgb(38, 64, 209);
+  color: #dddddd;
+}
+
+/* icon dưới */
+.floating-icons {
+  position: absolute;
+  top: 79vw;
+  right: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  z-index: 9999; /* Đảm bảo nổi lên trên các thành phần khác */
+}
+
+.floating-icons .icon img {
+  border: 1px solid black;
+  border-radius: 50px;
+  width: 38px;
+  height: 38px;
+  cursor: pointer;
+  filter: brightness(2) saturate(300%) invert(36%) sepia(188%) saturate(482%) hue-rotate(160deg) brightness(110%) contrast(100%);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover: hiệu ứng phóng to–thu nhỏ + bóng đổ vàng */
+.floating-icons .icon img:hover {
+  animation: pulse 1.2s infinite;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.8); /* bóng màu vàng */
+}
+
+/* Keyframes tạo hiệu ứng "nhịp đập" */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* footer */
+
+.footer {
+  background: url('../img/Paner.jpg') no-repeat center center/cover;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.footer-content {
+  padding: 0px 100px;
+  padding-bottom: 30px;
+  display: flex;
+  gap: 30px;
+}
+
+.footer-box-in {
+  width: 680px;
+  background-color: rgba(48, 47, 56, 0.411);
+  padding: 40px 30px;
+}
+.footer-box-in h3{
+  font-size: 25px;
+  text-align: center;
+}
+.footer-box-in p{
+  font-size: 15px;
+}
+.footer-box-in hr{
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+.hr-ngang {
+  margin: 35px 0px;
+  height: 3px;
+  width: 110px;
+  margin-left: 30%;
+  background-color: #dddddd;
+}
+
+.footer-box-in .social-icons {
+  display: flex;
+  justify-content: center;
+}
+.footer-box-in .social-icons img {
+  border-radius: 6px;
+  border: 1px solid red;
+  padding: 5px 5px;
+  width: 30px;
+  margin-right: 10px;
+  filter: brightness(0) invert(1); /* icon trắng */
+}
+
+.footer-box-in .footer-bottom {
+  padding-top: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 12px;
+  color: #cccccc;
+}
+
+/*  */
+.footer-box-out{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/*  */
+.footer-box-int{
+  display: flex;
+  padding: 40px 0px;
+}
+.box-into {
+width: 50%;
+}
+.box-into img{
+  margin: 0px 37%;
+  width: 70px;
+  filter: brightness(0) invert(1);
+}
+
+.box-into h4{
+  text-align: center;
+  padding: 26px 0px;
+}
+
+.box-into ul {
+  list-style: none;
+  padding: 0;
+}
+.box-into ul li {
+  margin-bottom: 8px;
+}
+.box-into ul li a {
+  margin: 22%;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #dddddd;
+  text-decoration: none;
+}
+
+/*  */
+.footer-box-ynt {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+}
+.footer-box-ynt img{
+  padding-top: 20px;
+  width: 50%;
+  height: 168px;
+}
+
+
+
+  /* hiệu ứng cho ảnh */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      padding: 20px;
+      text-align: center;
+      align-items: center;
+    }
+  
+    .logo img {
+      position: static;
+      width: 80px;
+      margin-bottom: 10px;
+    }
+  
+    nav {
+      flex-direction: column;
+      padding: 0;
+      align-items: center;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .nav-icons {
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 10px;
+    }
+  
+    .sub {
+      height: 150px;
+      text-align: center;
+      padding: 10px;
+    }
+  
+    .sub p {
+      font-size: 26px;
+    }
+  
+    .breadcrumb p {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+  
+    .table-wrapper {
+      padding: 10px;
+      overflow-x: auto;
+    }
+  
+    .rito table {
+      font-size: 12px;
+      min-width: 600px;
+    }
+  
+    th, td {
+      padding: 5px;
+      font-size: 12px;
+    }
+  
+    .tabs {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .tabs button {
+      width: 100%;
+      margin-bottom: 5px;
+    }
+  
+    .support {
+      flex-direction: column;
+      padding: 30px 20px;
+      align-items: center;
+    }
+  
+    .hys {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+  
+    .hys h4 {
+      font-size: 20px;
+      width: auto;
+    }
+  
+    .hys hr {
+      width: 60px;
+    }
+  
+    .floating-icons {
+      position: fixed;
+      bottom: 20px;
+      right: 10px;
+      top: auto;
+    }
+  
+    .sidebar-icons {
+      position: fixed;
+      bottom: 20px;
+      right: 10px;
+      top: auto;
+      flex-direction: column;
+      gap: 10px;
+      z-index: 999;
+    }
+  
+    .sidebar-icons img {
+      width: 80px;
+      height: auto;
+    }
+  
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 20px;
+    }
+  
+    .footer-box-in,
+    .footer-box-out {
+      width: 100%;
+    }
+  
+    .footer-box-int {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .box-into {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .box-into img {
+      margin: 0 auto;
+    }
+  
+    .footer-box-ynt {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-box-ynt img {
+      width: 90%;
+      height: auto;
+    }
+  }
+  
