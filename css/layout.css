@@ -669,7 +669,7 @@ img:hover {
   .resource-grid,
   .news-grid,
   .doitac-logos {
-    gap: 20px;
+    /* gap: 20px; */
     grid-template-columns: repeat(2, 1fr);
   }
   .sidebar-icons,
@@ -825,13 +825,13 @@ img:hover {
 /* Responsive cho Mobile */
 
 @media (max-width: 480px) {
-  .line,
+  /* .line,
   .services,
   .resources,
   .news,
   .doitac {
     padding: 20px;
-  }
+  } */
 
   .services,
   .resource-item,
