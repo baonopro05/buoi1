@@ -264,7 +264,7 @@ header {
 /* icon dưới */
 .floating-icons {
   position: absolute;
-  top: 208.8vw;
+  top: 172rem;
   right: 30px;
   display: flex;
   flex-direction: column;
@@ -347,10 +347,10 @@ header {
 /* Dịch vụ */
 .services {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 40px;
   padding: 50px 100px;
-  /* max-width: 1000px; */
+  flex-wrap: wrap;
   margin: auto;
 }
 .service-item {
@@ -371,6 +371,7 @@ header {
   font-size: 11px;
   color: #333;
   padding-bottom: 20px;
+  
 }
 
 /* nhúng map */
@@ -426,6 +427,7 @@ header {
 .resource-item p {
   padding-top: 8px;
   font-size: 12px;
+  
 }
 .resource-item a {
   color: #fffb00;
@@ -451,7 +453,6 @@ header {
   background-color: #155af1c2;
   border: none;
 }
-
 .news-grid {
   padding-top: 30px;
   display: grid;
@@ -491,7 +492,12 @@ header {
 .news-item p {
   font-size: 12px;
   color: #584f4fc7;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%; /* Quan trọng để giới hạn chiều ngang */
 }
+
 
 /* Đối tác */
 .doitac {
@@ -656,7 +662,7 @@ img:hover {
   .resources,
   .news,
   .doitac {
-    gap: 20px;
+    /* gap: 20px; */
     padding: 30px;
   }
   .services,
@@ -665,6 +671,10 @@ img:hover {
   .doitac-logos {
     gap: 20px;
     grid-template-columns: repeat(2, 1fr);
+  }
+  .sidebar-icons,
+  .floating-icons{
+    display: none;
   }
 /*  */
   header{
@@ -717,20 +727,19 @@ img:hover {
     /* dịch vụ */
   .service-item{
     border: 1px solid rgb(59, 57, 57);
-    background-color: #d3caca6e;
     border-radius: 5px;
   }
   .service-item img{
-    width: 130px;
+    width: auto;
     height: 130px;
   }
   .services h3{
     font-weight: bold;
-    font-size: 30px;
+    font-size: 18px;
   }
   .services p{
-    margin: 0 50px;
-    font-size: 16px;
+    /* margin: 0 50px; */
+    font-size: 12px;
   }
     /* nguồn lực */
   .resource-item img {
@@ -740,10 +749,12 @@ img:hover {
   .resource-item h3{
     font-size: 22px;
   }
-  .resource-item p{
-    font-size: 16px;
-    font-weight: bolder;
-  }
+.service-item p {
+  font-size: 11px;
+  color: #333;
+  padding-bottom: 20px;
+}
+
     /* tin tức nb */
   .news{
     background-color: rgb(154, 202, 241);
@@ -863,15 +874,18 @@ img:hover {
     text-align: center;
     margin: 0 15px;
   }
-
+  .sidebar-icons,
+  .floating-icons{
+    display: none;
+  }
   /* dịch vụ */
   .service-item{
     border: 1px solid rgb(59, 57, 57);
-    background-color: #d3caca6e;
     border-radius: 5px;
   }
   .service-item img{
-    width: 70px;
+    margin: auto;
+    width: auto;
     height: 70px;
   }
 
