@@ -348,13 +348,14 @@ header {
 .services {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 40px;
+  gap: 20px;
   padding: 50px 100px;
   flex-wrap: wrap;
   margin: auto;
 }
 .service-item {
   text-align: center;
+  overflow: hidden;
 }  
 .service-item img {
   width: auto;
@@ -371,6 +372,10 @@ header {
   font-size: 11px;
   color: #333;
   padding-bottom: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%; /* Quan trọng để giới hạn chiều ngang */
   
 }
 
@@ -412,7 +417,8 @@ header {
 .resource-item {
   /* background: white; */
   color: rgb(252, 252, 252);
-  padding: 15px;
+  padding: 10px;
+  overflow: hidden;
   border-radius: 8px;
   text-align: left;
 }
@@ -425,8 +431,12 @@ header {
   font-size: 16px;
 }
 .resource-item p {
-  padding-top: 8px;
+  /* padding-top: 8px; */
   font-size: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%; /* Quan trọng để giới hạn chiều ngang */
   
 }
 .resource-item a {
@@ -662,14 +672,12 @@ img:hover {
   .resources,
   .news,
   .doitac {
-    /* gap: 20px; */
-    padding: 30px;
+    padding: 20px;
   }
   .services,
   .resource-grid,
   .news-grid,
   .doitac-logos {
-    /* gap: 20px; */
     grid-template-columns: repeat(2, 1fr);
   }
   .sidebar-icons,
@@ -678,28 +686,30 @@ img:hover {
   }
 /*  */
   header{
-    height: 60px;
+    height: 55px;
     display: flex;
     justify-content: space-between;
   }
   .nav__bars{
+    width: 25px;
     margin: auto 80px;
+    margin-right: 30px;
   }
   .logo{
-    margin: 0 60px;
-    width: 70px;
+    margin: 0px 60px;
+    margin-left: 5%;
+    width: 60px;
     
   }
 
   /* Banner */
-  .banner {
-    text-align: center;
-    padding: 20px;
+  .sub {
+    height: 300px;
   }  
 
   /* box */
   .search-box {
-    width: 600px;
+    width: 60%;
     height: 80px;
     position: relative;
     left: auto;
@@ -716,12 +726,10 @@ img:hover {
     height: 30px;
   }
   .search-text {
-    /* border: 1px solid red; */
     width: 600px;
     font-size: 18px; 
     font-weight: bolder;
     text-align: center;
-    /* margin: 0 15px; */
   }
 
     /* dịch vụ */
@@ -741,13 +749,21 @@ img:hover {
     /* margin: 0 50px; */
     font-size: 12px;
   }
+  /* map */
+  .map-container{
+    padding: 15px 30px;
+    width: 100%;
+  }
+  .map-container iframe{
+    height: 400px;
+  }
     /* nguồn lực */
   .resource-item img {
     width: 100%;
     height: 200px;
   }
   .resource-item h3{
-    font-size: 22px;
+    font-weight: bold;
   }
 .service-item p {
   font-size: 11px;
@@ -761,18 +777,27 @@ img:hover {
   }
   .news-item img {
     width: 100%;
-    height: 70%;
+    height: 60%;
   }
   .news-item h3{
-    font-size: 18px;
+    font-weight: bold;
   }
   .news-item p{
     font-size: 14px;
   }
+
   /* đối tác */
+  .doitac-logos{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
   .doitac-logos img{
-    width: 100%;
-    height: 200px;
+    width: 45%;
+    height: 150px;
   }
 /* footer */
   .footer-content {
@@ -787,11 +812,15 @@ img:hover {
   }
 
   .footer-box-int {
-    flex-direction: column;
+    display: flex;
+  }.footer-box-in .hr-ngang{
+    margin: 20px auto;
   }
-
+  .footer-box-in p{
+    margin: 0 18%;
+  }
   .box-into {
-    width: 100%;
+    width: 50%;
   }
 
   .box-into img {
@@ -825,20 +854,12 @@ img:hover {
 /* Responsive cho Mobile */
 
 @media (max-width: 480px) {
-  /* .line,
-  .services,
-  .resources,
-  .news,
-  .doitac {
-    padding: 20px;
-  } */
-
   .services,
   .resource-item,
-  .news-grid,
-  .doitac-logos {
+  .news-grid{
     grid-template-columns: repeat(2, 1fr);
   }
+
   /* header */
   header{
     height: 40px;
@@ -847,7 +868,9 @@ img:hover {
     width: 60px;
   }
   .nav__bars{
-    margin: 4px;
+    width: 20px;
+    margin: 8px;
+    margin-right: 20px;
   }
   .sub {
     height: 200px;
@@ -888,24 +911,63 @@ img:hover {
     width: auto;
     height: 70px;
   }
+  .service-item h3{
+    font-size: 15px;
+  }
 
   /* map */
   .map-container{
     padding: 15px 30px;
     width: 100%;
   }
+  .map-container iframe{
+    height: 300px;
+  }
+
+    /* nguồn lực */
+    .resources .h2r{
+      font-size: 18px;
+      padding: 0;
+    }
+    .resources hr{
+      height: 30px;
+    }
+  .resource-item img {
+    height: 150px;
+  }
 
   /* tin tức nb */
   .news{
     background-color: rgb(154, 202, 241);
   }
+  .news h2{
+    font-size: 18px;
+    padding: 0;
+  }
+  .news hr{
+    margin: auto;
+  }
   .news-item img {
-    width: 170px;
+    width: 100%;
     height: 100px;
   }
-  /* nguồn lực */
-  .resource-item img {
-    height: 150px;
+  .news-item h3{
+    font-size: 13px;
+    font-weight: bold;
+  }
+
+  /* đối tác */
+    .doitac-logos{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .doitac-logos img{
+    width: 45%;
+    height: 90px;
   }
 
 /* footer */
@@ -922,7 +984,7 @@ img:hover {
     font-size: 20px;
   }
   .footer-box-in p {
-    margin: 0 10px;
+    margin: 0 60px;
     font-size: 13px;
   }
   .hr-ngang {
