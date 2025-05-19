@@ -1021,3 +1021,35 @@ img:hover {
     padding: 10px 0;
   }
 }
+
+/* chuột rê bóng */
+.cursor-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.cursor-circle {
+  width: 60px;
+  height: 60px;
+  border: 2px solid orange;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px rgba(255, 165, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: orange;
+  border-radius: 50%;
+  position: absolute;
+  transition: top 0.05s linear, left 0.05s linear;
+}
+

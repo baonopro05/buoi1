@@ -267,5 +267,60 @@
         </div>
     </div>
   </footer>
+  <!-- rê bóng -->
+<div class="cursor-wrapper">
+  <div class="cursor-circle">
+    <div class="dot"></div>
+  </div>
+</div>
+
+
+
 </body>
 </html>
+<script>
+  const cursorWrapper = document.querySelector('.cursor-wrapper');
+  const dot = document.querySelector('.dot');
+
+  let lastX = 0;
+  let lastY = 0;
+
+  document.addEventListener('mousemove', (e) => {
+    // Tăng khoảng cách giữa chuột và bóng
+    const offsetX = 40;
+    const offsetY = 40;
+
+    // Vị trí bóng theo chuột nhưng lệch ra xa
+    const circleX = e.clientX + offsetX;
+    const circleY = e.clientY + offsetY;
+
+    cursorWrapper.style.left = `${circleX}px`;
+    cursorWrapper.style.top = `${circleY}px`;
+
+    // Tính hướng chuột
+    const dx = e.clientX - lastX;
+    const dy = e.clientY - lastY;
+
+    lastX = e.clientX;
+    lastY = e.clientY;
+
+    const magnitude = Math.sqrt(dx * dx + dy * dy);
+    if (magnitude === 0) return;
+
+    const normX = dx / magnitude;
+    const normY = dy / magnitude;
+
+    // Ra rìa vòng tròn (tính từ tâm, trừ bán kính dot)
+    const radius = 30 - 5; // 60px là đường kính bóng, 5 là nửa kích thước dot
+
+    const dotLeft = 50 + normX * radius;
+    const dotTop = 50 + normY * radius;
+
+    dot.style.left = `${dotLeft}%`;
+    dot.style.top = `${dotTop}%`;
+  });
+</script>
+
+
+
+

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body{
+    font-family: "Nunito", sans-serif, sans-serif;
+    background-color: rgba(88, 84, 84, 0.37);
+}
+section{
+    padding: 80px 0;
+}
+/* Toàn bộ section */
+.section-space-va {
+    background: #f6fafd;
+    text-align: center;
+}
+
+/* Tiêu đề */
+.section-space-va .title h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #2e2e2e;
+}
+
+.section-space-va .title p {
+    font-size: 16px;
+    color: #888;
+}
+
+/* Container row */
+.container .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+/* Các cột con */
+.row-col {
+    margin: 24px 0px 0px;
+    padding: 20px 12px;
+    flex: 0 1 350px;
+}
+.row-col a{
+    text-decoration:none
+}
+
+/* Hộp chức năng */
+.feature-box {
+    background: #fff;
+    padding: 40px 20px 30px;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease;
+    position: relative;
+    text-decoration: none;
+}
+
+.feature-box:hover {
+    transform: translateY(-10px);
+}
+
+/* Icon hình lục giác */
+.feature-icon {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fef4f4;
+    padding: 10px;
+    width: 64px;
+    height: 64px;
+    clip-path: polygon(
+        50% 0%,
+        93% 25%,
+        93% 75%,
+        50% 100%,
+        7% 75%,
+        7% 25%
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Icon ảnh */
+.feature-icon img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+/* Tiêu đề trong hộp */
+.feature-box h5 {
+    font-size: 18px;
+    color: #1a73e8;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+/* Mô tả trong hộp */
+.feature-box span {
+    font-size: 14px;
+    color: #666;
+    display: block;
+    line-height: 1.5;
+}
+
+/* Bỏ gạch chân link */
+.feature-box a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+    </style>
+</head>
+<body>
+    <!-- v1 -->
+<section class="section-space-va">
+    <div class="container-fluid">
+        <div class="title">
+            <h2>Khám Phá TNO</h2>
+            <p>Các liên kết hữu ích tại TNO</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="row-col">
+                <a href="#">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <img src="assets/images/nhaOng/1.png" alt="">
+                        </div>
+                        <h5>Tìm kiếm</h5>
+                        <span>Tìm tác phẩm theo tác phẩm, tác giả</span>
+                    </div>
+                </a>
+            </div>
+            <div class="row-col">
+                <a href="#">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <img src="assets/images/nhaOng/2.png" alt="">
+                        </div>
+                        <h5>Bảng xếp hạng</h5>
+                        <span>Các tác phẩm nổi bật với lượt đọc cao</span>
+                    </div>
+                </a>
+            </div>
+            <div class="row-col">
+                <a href="#">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <img src="assets/images/nhaOng/anh3.png" alt="">
+                        </div>
+                        <h5>Sáng tác</h5>
+                        <span>Trở thành tác giả và những lưu ý khi sáng tác</span>
+                    </div>
+                </a>
+            </div>
+            <div class="row-col">
+                <a href="#">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <img src="assets/images/nhaOng/anh4.png" alt="">
+                        </div>
+                        <h5>Nạp mật</h5>
+                        <span>Hướng dẫn nạp mật để mở khóa những bộ truyện có phí</span>
+                    </div>
+                </a>
+            </div>                                   
+        </div>
+    </div>
+</section>
+<!-- v2 -->
+<section class="section-space vb">
+    <div class="container-fluid">
+        <div class="title">
+            <h2>Độc quyền</h2>
+            <p>Các tác phẩm chất lượng cao đăng tải duy nhất tại TNO</p>
+            <a href="#">Xem thêm</a>
+        </div>
+    </div>
+    <div class="container-demo">
+        <div class="row-demo">
+            <div class="demo">
+                <div class="demo-box">
+                    <div class="img-wr">
+                        <a href="#"><img src="#" alt="">ảnh</a>
+                    </div>
+                    <div class="demo-detail">
+                        <div class="demo-title">
+                            <a href="#">Mời Tướng Quân Nghe Điện Thoại</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="demo">
+                <div class="demo-box">
+                    <div class="img-wr">
+                        <a href="#"><img src="#" alt="">ảnh</a>
+                    </div>
+                    <div class="demo-detail">
+                        <div class="demo-title">
+                            <a href="#">Chứng Ngủ Rũ Của Cô Ấy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="demo">
+                <div class="demo-box">
+                    <div class="img-wr">
+                        <a href="#"><img src="#" alt="">ảnh</a>
+                    </div>
+                    <div class="demo-detail">
+                        <div class="demo-title">
+                            <a href="#">Thành Phố Lạc Bóng Người</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- v3 -->
+<section class="section-space vc">
+    <div class="container-fluid">
+        <div class="title">
+            <h2>Truy cập nhanh</h2>
+            <p>Các tác phẩm xuất bản tại TNO</p>
+        </div>
+    </div>
+    <div class="container-demi">
+        <div class="row-demi">
+            <div class="row-browse">
+                <div class="col-bro">
+                    <div class="browse">
+                        <h5>
+                            <span><img src="#" alt="">icon</span>
+                            "Mới cập nhật ->"
+                            <a href="#">Xem thêm</a>
+                        </h5>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="#" alt="">
+                                    <span>Chút Cảm Xúc</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="#" alt="">
+                                    <span>Vũ Điệu Nước Đen</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="#" alt="">
+                                    <span>Hồ Sơ Ấn Ký Mặt Trăng Máu</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="#" alt="">
+                                    <span>Gia Ý Cư Sĩ</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="#" alt="">
+                                    <span>Ánh Sao Và Đom Đóm</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-bro">
+                    <div class="browse">
+                        <h5>
+                            <span></span>
+                            "Tác phẩm mới ->"
+                            <a href="#">Xem thêm</a>
+                        </h5>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="#" alt="">
+                                    <span>Các Oneshot Truyện Medieval Fantasy</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="#" alt="">
+                                    <span>UTOPIA</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="#" alt="">
+                                    <span>Chút cảm Xúc</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="#" alt="">
+                                    <span>Những Kẻ Ngoại Đao </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="#" alt="">
+                                    <span>Nàng Tại Núi Lĩnh Nam</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-bro">
+                    <div class="browse">
+                        <h5>
+                            <span></span>
+                            "Đề xuất ->"
+                            <a href="#">Xem thêm</a>
+                        </h5>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="#" alt="">
+                                    <span>Thành Lũy Kỳ Quan Thứ 8</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="#" alt="">
+                                    <span>Từ Bình Minh Đến Hoàng Hôn- Part 1</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="#" alt="">
+                                    <span>Vãn Hương Quy Lộ</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="#" alt="">
+                                    <span>Tinh Vực - Quyển 1: Hai Thế Giới</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="#" alt="">
+                                    <span>Tiệm Mì Gõ Lúc Nửa Đêm</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
