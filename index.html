@@ -1,326 +1,834 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Cảng Quốc Tế</title>
-  <link rel="stylesheet" href="./css/layout.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index-mau.css">
 </head>
 <body>
-  <!-- Header -->
-  <header>
+
+    <!-- Menu điều hướng -->
+<nav class="main-nav">
+  <div class="nav-container">
+    <!-- Logo -->
     <div class="logo">
-      <a href="index.html"> <img src="img/logo1.png" alt="Logo"></a>
+      <img src="assets/images/nhaOng/logo-suvancac.png" alt="Logo">
     </div>
-    <!-- nav pc -->
-    <nav class="mnu">
-      <ul>
-        <li><a href="index.html">TRANG CHỦ</a></li>
-        <li><a href="#">GIỚI THIỆU</a></li>
-        <li><a href="#">DỊCH VỤ</a></li>
-        <li><a href="thuekho.html">THUÊ KHO</a></li>
-        <li><a href="#">TIN TỨC</a></li>
-        <li><a href="#">LIÊN HỆ</a></li>
-      </ul>
-      <div class="nav-icons">
-        <span class="search-icon"><img src="img/lup1.png" alt=""></span>
-        <button class="lang-btn">VN</button>
-      </div>
-    </nav>
-    <!--  -->
 
-        <!-- 3 gạch -->
-        <label for="nav-mobile-input" class="nav__bars">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
-       </label>
-       
-       <input type="checkbox" hidden name="" class="nav__input" id="nav-mobile-input"> 
-  
-       <label for="nav-mobile-input" class="nav__overlay"></label>
-       <!-- nav mobile -->
-       <nav class="nav__mobile">
-          <label for="nav-mobile-input" class="nav__mobile-close">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
-          </label>
-  
-          <ul class="nav__mobile-list">
-            <li><a href="index.html" class="nav__mobile-link">TRANG CHỦ</a></li>
-            <li><a href="#" class="nav__mobile-link">GIỚI THIỆU</a></li>
-            <li><a href="#" class="nav__mobile-link">DỊCH VỤ</a></li>
-            <li><a href="thuekho.html" class="nav__mobile-link">THUÊ KHO</a></li>
-            <li><a href="#" class="nav__mobile-link">TIN TỨC</a></li>
-            <li><a href="#" class="nav__mobile-link">LIÊN HỆ</a></li>
-          </ul>
-      </nav>
-  </header>
-
-  <!-- Banner search -->
-  <div class="sub">
-    <div class="search-box">
-      <span class="search-text">Chúng tôi có thể làm gì giúp bạn?</span>
-      <input type="text" placeholder="Tìm kiếm ngay">
-      <button><img src="img/tele.png" alt=""></button>
-    </div>
+    <!-- Các mục menu -->
+    <ul class="menu">
+      <li><a href="#">Trang chủ</a></li>
+      <li><a href="#">Bộ sưu tập</a></li>
+      <li><a href="#">Cửa hàng</a></li>
+      <li><a href="#">Tài khoản</a></li>
+      <li><a href="#">Viết</a></li>
+      <li><a href="#">Tìm kiếm</a></li>
+      <li><a href="#">Nạp mặt</a></li>
+    </ul>
   </div>
-
-  <!-- Section giới thiệu -->
-  <div class="section">
-    <h2>DÀNH CHO KHÁCH HÀNG</h2>
-    <div class="line"> 
-      <div class="line-sta"></div>
-      <div class="line-text">Uy tín và chất lượng - Khẳng định thương hiệu</div>
-      <div class="line-en"></div>
-    </div>
-  
-  <!-- icon trên-->
-  <div class="sidebar-icons">
-    <button class="toggle-btn">–</button>
-    <div class="icon-list">
-      <a href="lichtrinh.html"><img src="img/icon-lich.png" alt="Calendar" class="ts"></a>    
-      <img src="img/icon-cang.png" alt="Factory">
-    </div>
-  </div>
-  <!-- icon dưới -->
-  <div class="floating-icons">
-    <a href="#" class="icon phone" title="Gọi điện thoại">
-      <img src="img/phone-call.png" alt="Phone">
-    </a>
-    <a href="#" target="_blank" class="icon facebook" title="Facebook">
-      <img src="img/icon_fb.png" alt="Facebook">
-    </a>
-    <a href="#" target="_blank" class="icon zalo" title="Zalo">
-      <img src="img/message.png" alt="Message">
-    </a>
-  </div>
+</nav>
 
 
-  <!-- Dịch vụ -->
-  <div class="services">
-    <div class="service-item">    
-        <img src="img/container1.png" alt="Container">
-        <h3>Tra cứu container</h3>
-        <p>Bắt đầu từ 28/06/2016 Quý khách hàng có thể tra cứu container bằng 2 cách: Cách 1...</p>
-    </div>
-    <div class="service-item">
-      <img src="https://img.icons8.com/ios/100/container-truck.png" alt="">
-      <h3>Năng suất xếp dỡ</h3>
-      <p>Năng suất bốc dở hàng tính theo tấn/ngày/tàu kể trên đã kể đến thời gian làm...</p>
-    </div>
-    <div class="service-item">
-      <img src="https://img.icons8.com/ios/100/user.png" alt="">
-      <h3>Khách hàng</h3>
-      <p>Danh sách hàng tàu khách Container tại Đà Nẵng; Danh sách các hãng tàu khách</p>
-    </div>
-    <div class="service-item">
-      <img src="https://img.icons8.com/ios/100/bill.png" alt="">
-      <h3>Biểu cước</h3>
-      <p>1.Biểu cước cảng Đà Nẵng năm 2018 Vui lòng xem chi tiết biểu cước Cảng Đà Nẵng...</p>
-    </div>
-    <div class="service-item">
-      <img src="img/taulon.png" alt="">
-      <h3>Lịch tàu container</h3>
-      <p>Quý khách bấm vào đây để xem Lịch tàu. Lịch tàu Container, Lịch tàu khách</p>
-    </div>
-    <div class="service-item">
-      <img src="https://img.icons8.com/ios/100/invoice.png" alt="">
-      <h3>Hóa đơn điện tử</h3>
-      <p>Hỗ trợ Quý khách hàng tra cứu thông tin hóa đơn điện tử do Cảng Đà Nẵng phát hành.</p>
-    </div>
-    <div class="service-item">
-      <img src="https://img.icons8.com/ios/100/network.png" alt="">
-      <h3>Kế hoạch CA</h3>
-      <p>Kế hoạch CA và dự báo tàu đến</p>
-    </div>
-    <div class="service-item">
-      <img src="https://img.icons8.com/ios/100/bell.png" alt="">
-      <h3>Thông báo khách hàng</h3>
-      <p>Thông báo cho khách hàng về việc sử dụng Hóa đơn điện tử và máy POS tại XN Cảng...</p>
-    </div>
-  </div>
-
-  <!-- Bản đồ -->
-  <div class="map-container">
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3921.792614328774!2d106.48721224872392!3d10.595381307206528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310acb0839d31001%3A0x418e842ba5919e9d!2zQ-G6o25nIFF14buRYyBU4bq_IFRIw4BOSCBUw4BJ!5e0!3m2!1svi!2sus!4v1746244974038!5m2!1svi!2sus"
-      width="85%" height="500" style="border:0;" allowfullscreen=""
-      loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
-  </div>
-
-  <!-- Nguồn lực khai thác -->
-  <section class="resources">
-    <h2 class="h2r"><hr> NGUỒN LỰC KHAI THÁC</h2>
-    <div class="resource-grid">
-      <div class="resource-item">
-        <img src="img/khobai.jpg" alt="Kho bãi">
-        <h3>Kho bãi</h3>
-        <p>Hệ thống phần mềm 1.Phần mềm quản lý khai thác Container CATOS[...]</p>
-        <a href="#">Xem chi tiết →</a>
-      </div>
-      <div class="resource-item">
-        <img src="img/anhcntt.jpg" alt="CNTT">
-        <h3>Công nghệ thông tin</h3>
-        <p>Hệ thống phần mềm 1.Phần mềm quản lý khai thác Container CATOS[...]</p>
-        <a href="#">Xem chi tiết →</a>
-      </div>
-      <div class="resource-item">
-        <img src="img/tauvt.jpg" alt="Phương tiện">
-        <h3>Phương tiện thiết bị</h3>
-        <p>Hệ thống phần mềm 1.Phần mềm quản lý khai thác Container CATOS[...]</p>
-        <a href="#">Xem chi tiết →</a>
-      </div>
-      <div class="resource-item">
-        <img src="img/annninhcabg.jpg" alt="An ninh cảng">
-        <h3>An ninh cảng</h3>
-        <p>Hệ thống phần mềm [...]</p>
-        <a href="#">Xem chi tiết →</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Tin tức nổi bật -->
-  <section class="news">
-    <h2>TIN TỨC NỔI BẬT</h2>
-    <hr>
-    <div class="news-grid">
-      <div class="news-item">
-        <img src="img/tau.jpg" alt="Tin tức 1">
-        <span class="date">31<br>TH10</span>
-        <h3>Những cảng biển lớn nhất hiện nay bạn có thể chưa biết?</h3>
-        <p>Cảng Sài Gòn, còn được gọi là Cảng Hải Phòng Sài Gòn, là một cảng biển quan trọng nằm ở thành phố Hồ Chí Minh, Việt Nam...</p>
-      </div>
-      <div class="news-item">
-        <img src="img/cang2.jpg" alt="Tin tức 2">
-        <span class="date">31<br>TH10</span>
-        <h3>Những cảng biển lớn nhất hiện nay bạn có thể chưa biết?</h3>
-        <p>Cảng Sài Gòn, còn được gọi là Cảng Hải Phòng Sài Gòn, là một cảng biển quan trọng nằm ở thành phố Hồ Chí Minh, Việt Nam...</p>
-      </div>
-      <div class="news-item">
-        <img src="img/cang.jpg" alt="Tin tức 3">
-        <span class="date">31<br>TH10</span>
-        <h3>Những cảng biển lớn nhất hiện nay bạn có thể chưa biết?</h3>
-        <p>Cảng Sài Gòn, còn được gọi là Cảng Hải Phòng Sài Gòn, là một cảng biển quan trọng nằm ở thành phố Hồ Chí Minh, Việt Nam...</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Đối tác -->
-  <section class="doitac">
-    <div class="doitac-logos">
-      <img src="img/dt1.jpg" alt="Cường Thịnh">
-      <img src="img/dt2.jpg" alt="Vincom">
-      <img src="img/dt3.jpg" alt="Vingroup">
-      <img src="img/dt1.jpg" alt="Công ty BĐS">
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer"> <!--v1-->
-    <div class="footer-content"> <!--v2-->
-        <div class="footer-box-in"><!--v3-->
-            <h3>CÔNG TY TNHH THƯƠNG MẠI XUẤT NHẬP KHẨU -----</h3>
-            <div class="hr-ngang"></div>
-            <p>Địa chỉ: Cần Đước, Long An</p>
-            <p>Email: thanhtai.truong@stargroups.com</p>
-            <p>Website: admin168.vn</p>
-            <p>Hotline: 090 8378 370</p>
-            <hr>
-            <div class="social-icons">
-              <img src="img/icon_fb.png" alt="Facebook">
-              <img src="img/message.png" alt="Message">
-              <img src="img/tik-tok.png" alt="TikTok">
-              <img src="img/phone-call.png" alt="Call">
-            </div>
-            <div class="footer-bottom">
-              <p>2023 &copy; Copyright by ADMIN. All rights reserved.<br>Design by stargroup.vn</p>
-            </div>
+<!-- gthieu -->
+<div class="conter">
+    <p>Hai cuốn truyện “Tây Sơn Phụng Nhãn Ký” và “Bách Kính Đồ Quyển” ghi dấu ấn mạnh mẽ với độc giả nhí. Theo biểu đồ, doanh số cao nhất vào Thứ Sáu, cho thấy sức hút bền bỉ của truyện Việt chất lượng.</p>
+    <div class="img-container">
+        <div class="tenp">
+            <h2 class="gth">Giới Thiệu</h2>
+            <img class="img-large" src="assets/images/nhaOng/suvancac-1.jpg" alt="">
         </div>
-        <div class="footer-box-out"><!--v3-->
-          <div class="footer-box-int"><!--v4-->
-            <div class="box-into"><!--v5-->
-              <img src="img/call-tongdai.png" alt="">
-              <h4>HỖ TRỢ KHÁCH HÀNG</h4>
-              <ul>
-                <li><a href="#">> Hướng dẫn thông tin XNK</a></li>
-                <li><a href="#">> Hình thức thanh toán</a></li>
-                <li><a href="#">> Chăm sóc khách hàng</a></li>
-                <li><a href="#">> Đổi/trả hàng hóa</a></li>
-              </ul>
-            </div>
-            <hr>
-            <div class="box-into"><!--v5-->
-              <img src="img/bat_tay.png" alt="">
-              <h4>HỢP TÁC</h4>
-              <ul>
-                <li><a href="#">> Hợp tác kinh doanh</a></li>
-                <li><a href="#">> Quy chế hoạt động</a></li>
-                <li><a href="#">> Chính sách đại lý</a></li>
-                <li><a href="#">> Thông tin thanh toán</a></li>
-              </ul>
-            </div>
-          </div>
-          <hr>
-          <div class="footer-box-ynt"><!--v4-->
-            <img src="img/tiktok-shop.jpg" alt="TikTok Shop">
-            <img src="img/fb-panter.png" alt="Facebook Partner">
-          </div>
-        </div>
+        <div class="tenp">
+            <h2 class="gqy">Biểu Đồ - Gây Quỹ</h2>
+            <img class="img-small" src="assets/images/nhaOng/bieudo-truyen.png" alt="">
+        </div>        
     </div>
-  </footer>
-  <!-- rê bóng -->
-<div class="cursor-wrapper">
-  <div class="cursor-circle">
-    <div class="dot"></div>
-  </div>
 </div>
 
+<!-- v1 -->
+<section class="section-space va">
+    <div class="container-fluid">
+        <div class="title">
+            <h2>Khám Phá Sử Văn Các</h2>
+            <p>Các liên kết hữu ích tại Sử Văn Các</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="row-col">
+                <a href="#">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                           <img src="assets/images/nhaOng/1.png"/>
+                        </div>
+                        <h5>Tìm Kiếm</h5>
+                        <span>Tìm kiếm tác giả</span>
+                    </div>
+                </a>
+            </div>   
+            <div class="row-col">
+                <a href="#">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                           <img src="assets/images/nhaOng/1.png"/>
+                        </div>
+                        <h5>Tìm Kiếm</h5>
+                        <span>Tìm kiếm tác giả</span>
+                    </div>
+                </a>
+            </div> 
+            <div class="row-col">
+                <a href="#">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                           <img src="assets/images/nhaOng/1.png"/>
+                        </div>
+                        <h5>Tìm Kiếm</h5>
+                        <span>Tìm kiếm tác giả</span>
+                    </div>
+                </a>
+            </div>                             
+        </div>  
+    </div>
+</section>
+<!-- v2 -->
+<section class="section-space vb">
+    <div class="container-fluid">
+        <div class="title">
+            <h2>Độc quyền</h2>
+            <p>Các tác phẩm chất lượng cao đăng tải duy nhất tại Sử Văn Các</p>
+            <a href="#">Xem thêm</a>
+        </div>
+    </div>
+    <div class="container-demo">
+        <div class="row-demo">
+            <div class="demo">
+                <div class="demo-box">
+                    <div class="img-wr">
+                        <a href="/tac-pham/moi-tuong-quan-nghe-dien-thoai"><img class="img-fruid" src="assets/images/nhaOng/section2-2.jpg"/></a>
+                    </div>
+                    <div class="demo-detail">
+                        <div class="demo-title">
+                            <a href="/tac-pham/moi-tuong-quan-nghe-dien-thoai">Chứng Ngủ Rũ Của Cô Ấy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="demo">
+                <div class="demo-box">
+                    <div class="img-wr">
+                        <a href="/tac-pham/chung-ngu-ru-cua-co-ay"><img class="img-fruid" src="assets/images/nhaOng/section2-2.jpg" alt="Chứng Ngủ Rũ Của Cô Ấy"></a>
+                    </div>
+                    <div class="demo-detail">
+                        <div class="demo-title">
+                            <a href="/tac-pham/chung-ngu-ru-cua-co-ay">Chứng Ngủ Rũ Của Cô Ấy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="demo">
+                <div class="demo-box">
+                    <div class="img-wr">
+                        <a href="/tac-pham/thanh-pho-lac-bong-nguoi"><img class="img-fruid" src="assets/images/nhaOng/section2-3.jpg" alt="Thành Phố Lạc Bóng Người"></a>
+                    </div>
+                    <div class="demo-detail">
+                        <div class="demo-title">
+                            <a href="/tac-pham/thanh-pho-lac-bong-nguoi">Thành Phố Lạc Bóng Người</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
 
+</section>
+<!-- v3 -->
+<section class="section-space vc">
+    <div class="container-fluid">
+        <div class="title">
+            <h2>Truy cập nhanh</h2>
+            <p>Các tác phẩm xuất bản tại Sử Văn Các</p>
+        </div>
+    </div>
+    <div class="container-demi">
+        <div class="row-demi">
+            <div class="row-browse">
+                <div class="col-bro">
+                    <div class="browse">
+                        <h5>
+                            <span><img src="assets/images/nhaOng/hopqua.png" alt=""></span>
+                               Mới cập nhật →
+                            <a href="#">Xem thêm</a>
+                        </h5>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="assets/images/nhaOng/section3-c1-1.jpg" alt="">
+                                    <span>Chút Cảm Xúc</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/tac-pham/vu-dieu-nuoc-den">
+                                    <img src="assets/images/nhaOng/section3-c1-2.jpg" alt="">
+                                    <span>Vũ Điệu Nước Đen</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/tac-pham/ho-so-an-ky-mat-trang-mau">
+                                    <img src="assets/images/nhaOng/section3-c1-3.jpg" alt="">
+                                    <span>Hồ Sơ Ấn Ký Mặt Trăng Máu</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/tac-pham/gia-y-cu-si">
+                                    <img src="assets/images/nhaOng/section3-c1-4.jpg" alt="">
+                                    <span>Gia Ý Cư Sĩ</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/tac-pham/anh-sao-va-dom-dom">
+                                    <img src="assets/images/nhaOng/section3-c1-5.jpg" alt="">
+                                    <span>Ánh Sao Và Đom Đóm</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-bro">
+                    <div class="browse">
+                        <h5>
+                            <span><img src="assets/images/nhaOng/hopqua.png" alt=""></span>
+                            Tác phẩm mới →
+                            <a href="#">Xem thêm</a>
+                        </h5>
+                        <ul>
+                            <li>
+                                <a href="/tac-pham/cac-oneshot-truyen-medieval-fantasy">
+                                    <img src="assets/images/nhaOng/section3-c2-1.jpg" alt="">
+                                    <span>Các Oneshot Truyện Medieval Fantasy</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/tac-pham/utopia">
+                                    <img src="assets/images/nhaOng/section3-c2-2.jpg" alt="">
+                                    <span>UTOPIA</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/tac-pham/chut-cam-xuc">
+                                    <img src="assets/images/nhaOng/section3-c1-1.jpg" alt="">
+                                    <span>Chút cảm Xúc</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/tac-pham/nhung-ke-ngoai-dao">
+                                    <img src="assets/images/nhaOng/section3-c2-4.jpg" alt="">
+                                    <span>Những Kẻ Ngoại Đao </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/tac-pham/nang-tai-nui-linh-nam">
+                                    <img src="assets/images/nhaOng/section3-c2-5.jpg" alt="">
+                                    <span>Nàng Tại Núi Lĩnh Nam</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-bro">
+                    <div class="browse">
+                        <h5>
+                            <span><img src="assets/images/nhaOng/hopqua.png" alt=""></span>
+                            Đề xuất →
+                            <a href="#">Xem thêm</a>
+                        </h5>
+                        <ul>
+                            <li>
+                                <a href="/tac-pham/thanh-luy-ky-quan-thu-8">
+                                    <img src="assets/images/nhaOng/section3-c3-1.jpg" alt="">
+                                    <span>Thành Lũy Kỳ Quan Thứ 8</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/tac-pham/tu-binh-minh-den-hoang-hon">
+                                    <img src="assets/images/nhaOng/section3-c3-2.jpg" alt="">
+                                    <span>Từ Bình Minh Đến Hoàng Hôn- Part 1</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/tac-pham/van-huong-quy-lo">
+                                    <img src="assets/images/nhaOng/section3-c3-4.jpg" alt="">
+                                    <span>Vãn Hương Quy Lộ</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/tac-pham/tinh-vuc">
+                                    <img src="assets/images/nhaOng/section3-c3-3.jpg" alt="">
+                                    <span>Tinh Vực - Quyển 1: Hai Thế Giới</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="assets/images/nhaOng/section3-c3-5.jpg" alt="">
+                                    <span>Tiệm Mì Gõ Lúc Nửa Đêm</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- v4 -->
+<section class="section-space vd">
+    <div class="container-fluid">
+        <div class="title">
+            <h2>Trích dẫn hay</h2>
+        </div>
+    </div>
+    <div class="container-content">
+        <div class="content">
+            <img src="assets/images/nhaOng/icon-ngoackep.png" alt="">
+            <div class="content-grow">
+                <h6>
+                    <a href="/tac-pham/tiem-mi-go-luc-nua-dem">Tiệm mì gõ lúc nửa đêm</a>
+                </h6>
+                <p>Trường Tình</p>
+            </div>
+        </div>
+        <p> trong lòng tôi còn quá nhiều tơ vương, mỗi một ảo cảnh đều là em.,, </p>
+    </div>
+</section>
+<!-- v5 -->
+ <section class="section-space ve">
+    <div class="container-fluid">
+        <div class="title">
+            <h2>Bình luận mới nhất</h2>
+            <p>Lắng nghe tiếng lòng của độc giả nhà Ong</p>
+        </div>
+    </div>
+    <div class="container-comment"> <!--1-->
+        <div class="row-cmt"> <!--2-->
+            <div class="cmt-col"> <!--3-->
+                <div class="cmt-tab"> <!--4-->
+                    <div class="cmt-usr"> <!--5-->
+                        <div class="g6">
+                            <div class="g6-uk">
+                                <div class="uk-icon">
+                                    <div class="orbit"></div>
+                                    <img src="assets/images/nhaOng/icon-matgiotnc.png" alt="">
+                                </div>
+                                <div class="uk-detail">
+                                    <a href="/tac-pham/mong-chung-minh">
+                                        <h5>Mộng Chúng Minh</h5>
+                                    </a>
+                                    <p class="f-light">Thật ra chỉ vì vậy mà nói cậu Minh không thông minh thì tui cũng hơi buồn một xíu. Bởi vì con người tui </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="g6">
+                            <div class="g6-uk">
+                                <div class="uk-icon">
+                                     <div class="orbit"></div>
+                                    <img src="assets/images/nhaOng/icon-matgiotnc.png" alt="">
+                                </div>
+                                <div class="uk-detail">
+                                    <a href="/tac-pham/truy-vet">
+                                        <h5>Các Oneshot Truyện Medieval Fantasy</h5>
+                                    </a>
+                                    <p class="f-light">hay vãi, nhưng mình nghĩ rằng đoạn con gấu đuổi theo Eljar nên kịch tính hơn xíu, thể hiện cảm xúc </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="g6">
+                            <div class="g6-uk">
+                                <div class="uk-icon">
+                                    <div class="orbit"></div>
+                                    <img src="assets/images/nhaOng/icon-matgiotnc.png" alt="">
+                                </div>
+                                <div class="uk-detail">
+                                    <a href="/tac-pham/mong-chung-minh">
+                                        <h5>Truy Vết</h5>
+                                    </a>
+                                    <p class="f-light">Hoàng Tử</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="g6">
+                            <div class="g6-uk">
+                                <div class="uk-icon">
+                                    <div class="orbit"></div>
+                                    <img src="assets/images/nhaOng/icon-matgiotnc.png" alt="">
+                                </div>
+                                <div class="uk-detail">
+                                    <a href="/tac-pham/mong-chung-minh">
+                                        <h5>Mộng Chúng Minh</h5>
+                                    </a>
+                                    <p class="f-light">Cậu Minh chả lẽ bị dụ dỗ bởi những cái đấy hả tg sao cảm giác nó bị kì kì hình tượng thông minh sao </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="g6">
+                            <div class="g6-uk">
+                                <div class="uk-icon">
+                                    <div class="orbit"></div>
+                                    <img src="assets/images/nhaOng/icon-matgiotnc.png" alt="">
+                                </div>
+                                <div class="uk-detail">
+                                    <a href="/tac-pham/mong-chung-minh">
+                                        <h5>Mộng Chúng Minh</h5>
+                                    </a>
+                                    <p class="f-light">Cậu Minh chả lẽ bị dụ dỗ bởi những cái đấy hả tg sao cảm giác nó bị kì kì hình tượng thông minh sao</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="g6">
+                            <div class="g6-uk">
+                                <div class="uk-icon">
+                                    <div class="orbit"></div>
+                                    <img src="assets/images/nhaOng/icon-matgiotnc.png" alt="">
+                                </div>
+                                <div class="uk-detail">
+                                    <a href="/tac-pham/mong-chung-minh">
+                                        <h5>Mộng Chúng Minh</h5>
+                                    </a>
+                                    <p class="f-light">Ra nhiều xíu ik cj ơi </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+</section>
+<!-- v6 -->
+<section class="section-space vf">
+    <div class="container-fluid">
+        <div class="title">
+            <h2>Bộ sưu tập Ê hề sến súa</h2>
+            <p>Truyện sến nổi da gà nhưng vẫn mê rất mê.</p>
+        </div>
+    </div>
+    <div class="container-cart">
+        <div class="cart-row">
+            <div class="cart-col">
+                <a href="/tac-pham/khi-ta-17">
+                    <img src="assets/images/nhaOng/section6-2-1.jpg" alt="">
+                    <div class="caption"><h6>Khi ta 17</h6></div>
+                </a>
+            </div> 
+            <div class="cart-col">
+                <a href="/tac-pham/khi-ta-17">
+                    <img src="assets/images/nhaOng/section6-2-1.jpg" alt="">
+                    <div class="caption"><h6>Khi ta 17</h6></div>
+                </a>
+            </div> 
+            <div class="cart-col">
+                <a href="/tac-pham/khi-ta-17">
+                    <img src="assets/images/nhaOng/section6-2-1.jpg" alt="">
+                    <div class="caption"><h6>Khi ta 17</h6></div>
+                </a>
+            </div>
+            <div class="cart-col">
+                <a href="/tac-pham/khi-ta-17">
+                    <img src="assets/images/nhaOng/section6-2-1.jpg" alt="">
+                    <div class="caption"><h6>Khi ta 17</h6></div>
+                </a>
+            </div>
+            <div class="cart-col">
+                <a href="/tac-pham/khi-ta-17">
+                    <img src="assets/images/nhaOng/section6-2-1.jpg" alt="">
+                    <div class="caption"><h6>Khi ta 17</h6></div>
+                </a>
+            </div>
+            <div class="cart-col">
+                <a href="/tac-pham/khi-ta-17">
+                    <img src="assets/images/nhaOng/section6-2-1.jpg" alt="">
+                    <div class="caption"><h6>Khi ta 17</h6></div>
+                </a>
+            </div>
+        </div>   
+    </div>
+</section>
+<!--v7  -->
+<section class="section-space vg">
+    <div class="products-services">
+        <div class="products">
+            <div class="container-fluid">
+                <div class="title">
+                    <h2>Sản phẩm</h2>
+                    <p>Sách xuất bản và các sản phẩm khác tại Sử Văn Các</p>
+                    <a href="#">Xem thêm</a>
+                </div>
+            </div>
+            <div class="container-product">
+                <div class="row-prod">
+                    <div class="prod-3">
+                        <div class="prod-anh">
+                            <div class="anh-over">
+                                <a href="/san-pham/">
+                                    <img src="assets/images/nhaOng/section7-1.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="prod-title">
+                            <h3><a href="#">[Sách Xuất Bản] Thành Lũy Của Kỳ Quan Thứ 8</a></h3>
+                        </div>
+                    </div>
+                    <div class="prod-3">
+                        <div class="prod-anh">
+                            <div class="anh-over">
+                                <a href="/san-pham">
+                                    <img src="assets/images/nhaOng/section7-2.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="prod-title">
+                            <h3><a href="/san-pham/">[Sách Xuất Bản] Khi Địa Ngục Trống Rỗng</a></h3>
+                        </div>
+                    </div>
+                    <div class="prod-3">
+                        <div class="prod-anh">
+                            <div class="anh-over">
+                                <a href="/san-pham/">
+                                    <img src="assets/images/nhaOng/section7-3.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="prod-title">
+                            <h3><a href="/san-pham/">[Sách Xuất Bản] Xanh Xanh Góc Trời</a></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="services">
+            <div class="container-fluid">
+                <div class="title">
+                    <h2>Dịch vụ tại Sử Văn Các</h2>
+                    <p>Liên hệ Fanpage SỬ VĂN CÁC - Truyện Việt để được tư vấn chi tiết</p>
+                </div>
+            </div>
+            <div class="container-service">
+                <div class="col-serv">
+                    <div class="row-serv"> <!--4 cột-->
+                        <div class="serv-4">
+                            <div class="serv-wrap">
+                                <div class="serv-box">
+                                    <img src="assets/images/nhaOng/anh5.png" alt="">
+                                    <h6>Biên tập tác phẩm</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="serv-4 sutdow">
+                            <div class="serv-wrap">
+                                <div class="serv-box">
+                                    <img src="assets/images/nhaOng/6.png" alt="">
+                                    <h6>Tư vấn cốt truyện</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="serv-4">
+                            <div class="serv-wrap">
+                                <div class="serv-box">
+                                    <img src="assets/images/nhaOng/7.png" alt="">
+                                    <h6>Vẽ bìa tác phẩm</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="serv-4 sutdow">
+                            <div class="serv-wrap">
+                                <div class="serv-box">
+                                    <img src="assets/images/nhaOng/8.png" alt="">
+                                    <h6>Tự xuất bản sách</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="serv-line">
+                            <img src="assets/images/nhaOng/line.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- v8 -->
+<section class="section-space vh">
+    <div class="container-fluid">
+        <div class="title">
+            <h2>Thể loại & Chủ đề</h2>
+        </div>
+    </div>
+    <div class="container-topic">
+        <a href="#">
+            <span>Bí ẩn</span>
+        </a>
+        <a href="#">
+            <span>Giả tưởng</span>
+        </a>
+        <a href="#">
+            <span>Giật gân</span>
+        </a>
+        <a href="#">
+            <span>Hiện thực</span>
+        </a>
+        <a href="#">
+            <span>Hiện thực huyền diệu</span>
+        </a>
+        <a href="#">
+            <span>Khoa học viễn tưởng</span>
+        </a>
+        <a href="#">
+            <span>Kinh dị</span>
+        </a>
+        <a href="#">
+            <span>Lãng mạn</span>
+        </a>
+        <a href="#">
+            <span>Lịch sử</span>
+        </a>
+        <a href="#">
+            <span>Phản địa đàng</span>
+        </a>
+        <a href="#">
+            <span>Phiêu lưu</span>
+        </a>
+        <a href="#">
+            <span>Review</span>
+        </a>
+        <a href="#">
+            <span>Tân văn</span>
+        </a>
+        <a href="#">
+            <span>Tập thơ</span>
+        </a>
+        <a href="#">
+            <span>Tập truyện</span>
+        </a>
+        <a href="#">
+            <span>Tiểu thuyết</span>
+        </a>
+        <a href="#">
+            <span>Truyện ngắn</span>
+        </a>
+        <a href="#">
+            <span>18+</span>
+        </a>
+        <a href="#">
+            <span>199x-2k hồi ấy</span>
+        </a>
+        <a href="#">
+            <span>Âm nhạc</span>
+        </a>
+        <a href="#">
+            <span>Ẩm thực</span>
+        </a>
+        <a href="#">
+            <span>Bạo lực</span>
+        </a>
+        <a href="#">
+            <span>Kinh kịch</span>
+        </a>
+        <a href="#">
+            <span>Cảm ứng lịch sử</span>
+        </a>
+        <a href="#">
+            <span>Cận đại</span>
+        </a>
+        <a href="#">
+            <span>Cổ đại</span>
+        </a>
+        <a href="#">
+            <span>Cơ giới máy móc</span>
+        </a>
+        <a href="#">
+            <span>Cổ tích</span>
+        </a>
+        <a href="#">
+            <span>Cổ trang</span>
+        </a>
+        <a href="#">
+            <span>Cuộc thi liên hoàn</span>
+        </a><a href="#">
+            <span>Cưới trước yêu sau</span>
+        </a>
+        <a href="#">
+            <span>Dị năng</span>
+        </a>
+        <a href="#">
+            <span>Độc quyền TNO</span>
+        </a>
+        <a href="#">
+            <span>Đời thường</span>
+        </a><a href="#">
+            <span>Động vật</span>
+        </a>
+        <a href="#">
+            <span>E-Sport</span>
+        </a>
+        <a href="#">
+            <span>Gia đình</span>
+        </a>
+        <a href="#">
+            <span>Giả tưởng</span>
+        </a>
+        <a href="#">
+            <span>Hài huóc</span>
+        </a>
+        <a href="#">
+            <span>Hành động</span>
+        </a>
+        <a href="#">
+            <span>Hệ thống</span>
+        </a>
+        <a href="#">
+            <span>Hiện đại</span>
+        </a>
+        <a href="#">
+            <span>Học đường</span>
+        </a>
+        <a href="#">
+            <span>Không CP</span>
+        </a>
+        <a href="#">
+            <span>Kịch tính</span>
+        </a>
+        <a href="#">
+            <span>Kiếm hiệp</span>
+        </a>
+        <a href="#">
+            <span>Kinh dị</span>
+        </a>
+        <a href="#">
+            <span>Làm ruộng</span>
+        </a>
+        <a href="#">
+            <span>Lãng mạn</span>
+        </a>
+        <a href="#">
+            <span>Nam-Nữ</span>
+        </a>
+        <a href="#">
+            <span>Người thú</span>
+        </a>
+        <a href="#">
+            <span>OE</span>
+        </a>
+        <a href="#">
+            <span>Phản diện</span>
+        </a>
+        <a href="#">
+            <span>Phép thuật</span>
+        </a>
+        <a href="#">
+            <span>Phiêu lưu</span>
+        </a>
+        <a href="#">
+            <span>Phương tây</span>
+        </a>
+        <a href="#">
+            <span>Rung động</span>
+        </a>
+
+        <a href="#">
+            <span>Tình dục</span>
+        </a>
+        <a href="#">
+            <span>Tái sinh</span>
+        </a>
+        <a href="#">
+            <span>Tâm linh</span>
+        </a>
+        <a href="#">
+            <span>Tận thế / Hậu thế</span>
+        </a>
+        <a href="#">
+            <span>Thế giới mới</span>
+        </a>
+        <a href="#">
+            <span>Thực tế</span>
+        </a>
+        <a href="#">
+            <span>Tình cảm</span>
+        </a>
+        <a href="#">
+            <span>Truyện thiếu nhi</span>
+        </a>
+        <a href="#">
+            <span>Tương lai</span>
+        </a>
+        <a href="#">
+            <span>Võ thuật</span>
+        </a>
+        <a href="#">
+            <span>Vượt thời không</span>
+        </a>
+        <a href="#">
+            <span>Zombie</span>
+        </a>
+        <a href="#">
+            <span>Tận thế</span>
+        </a>
+        <a href="#">
+            <span>Truyện ngụ ngôn</span>
+        </a>
+        <a href="#">
+            <span>Trò chơi</span>
+        </a>
+        <a href="#">
+            <span>Truyện teen</span>
+        </a>
+        <a href="#">
+            <span>Trinh thám</span>
+        </a>
+        <a href="#">
+            <span>Truyện ngắn Hè 2023</span>
+        </a>
+        <a href="#">
+            <span>Tình đơn phương</span>
+        </a>
+    </div>
+</section>
+
+    <div class="footer-content"><!--v2v2-->
+        <div class="footer-logo"><img src="assets/images/nhaOng/logo-suvancac.png" alt="" class="img-logo"></div>
+        <h2>Mật Ngữ Trong Chính Sử</h2>
+        <div class="start"> 
+            <img class="star" src="assets/images/nhaOng/star.png" alt="" >
+            <img class="star" src="assets/images/nhaOng/star.png" alt="">
+            <img class="star" src="assets/images/nhaOng/star.png" alt="">
+            <img class="star" src="assets/images/nhaOng/star.png" alt="">
+            <img class="star" src="assets/images/nhaOng/star.png" alt="">
+        </div>
+        <!-- <div class="footer-thongtin">
+            <p>Công ty TNHH HIVE STORIES</p>
+            <p>DKKD số 0317669047</p>
+            <p>Địa chỉ: 1006/4 Âu Cơ, Phường 14, Quận Tân Bình, Thành phố Hồ Chí Minh, Việt Nam</p>
+        </div> -->
+        <div class="mxh">
+            <div class="ttlhe">
+                <p>Thông Tin Liên Hệ</p>
+                <div class="email">
+                    <img src="assets/images/nhaOng/icon-email.png" alt="">
+                    <a href="#" class="mxh-fb">suvancac@gmail.com</a>
+                </div>
+                <div class="fabook">
+                    <img src="assets/images/nhaOng/icon-fb.png"></img>
+                    <a href="https://www.facebook.com/ThanhChauSVC" class="mxh-fb">fb.com/thanhchauSVC</a>
+                </div>
+            </div>
+            <div class="tthdan">
+                <a href="#">Chính sách bảo mật</a>
+                <a href="#">Chính sách Sử dụng</a>
+                <a href="#">Chính sách thanh toán</a>
+                <a href="#">Chính sách giao và đổi, trả hàng</a>
+            </div>
+            <p class="footer-note">Tải ứng dụng Truyện Sử Văn Các - Truyện Việt để có trải nghiệm đọc tốt nhất</p>
+        </div>
+    </div>
 </body>
 </html>
-<script>
-  const cursorWrapper = document.querySelector('.cursor-wrapper');
-  const dot = document.querySelector('.dot');
-
-  let lastX = 0;
-  let lastY = 0;
-
-  document.addEventListener('mousemove', (e) => {
-    // Tăng khoảng cách giữa chuột và bóng
-    const offsetX = 40;
-    const offsetY = 40;
-
-    // Vị trí bóng theo chuột nhưng lệch ra xa
-    const circleX = e.clientX + offsetX;
-    const circleY = e.clientY + offsetY;
-
-    cursorWrapper.style.left = `${circleX}px`;
-    cursorWrapper.style.top = `${circleY}px`;
-
-    // Tính hướng chuột
-    const dx = e.clientX - lastX;
-    const dy = e.clientY - lastY;
-
-    lastX = e.clientX;
-    lastY = e.clientY;
-
-    const magnitude = Math.sqrt(dx * dx + dy * dy);
-    if (magnitude === 0) return;
-
-    const normX = dx / magnitude;
-    const normY = dy / magnitude;
-
-    // Ra rìa vòng tròn (tính từ tâm, trừ bán kính dot)
-    const radius = 30 - 5; // 60px là đường kính bóng, 5 là nửa kích thước dot
-
-    const dotLeft = 50 + normX * radius;
-    const dotTop = 50 + normY * radius;
-
-    dot.style.left = `${dotLeft}%`;
-    dot.style.top = `${dotTop}%`;
-  });
-</script>
-
-
-
-
