@@ -1,6 +1,6 @@
 /* Thanh menu chính */
 .main-nav {
-  background: linear-gradient(to right, #5c4a00, #7a6510); /* Màu nền nâu có chiều sâu */
+  background-image: linear-gradient(180deg, #8d0707 5%, #000000 100%);
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
   position: sticky;
   top: 0;
@@ -35,10 +35,10 @@
 /* Link trong menu */
 .menu li a {
   text-decoration: none;
-  color: black;
+  color: white;
   font-weight: 500;
-  font-size: 20px;
   transition: color 0.3s ease;
+  text-transform: uppercase;
 }
 
 .menu li a:hover {
@@ -55,11 +55,12 @@ section{
 /* giới thiệu */
 .conter{
     display: block;
-    padding: 50px;
+    padding: 30px;
 }
 
 .conter p{
-    font-weight: 700;
+    padding-bottom: 20px;
+    font-weight: 300;
     margin: auto;
     text-align: center;
     font-size: 16px;
@@ -81,12 +82,12 @@ section{
     align-items: center;
     top: 30px;
     left: 40%;
-    transform: translate(-50%, -50%);
-    color: white;
+    transform: translate(-50%, -230%);
+    color: rgb(0, 0, 0);
     font-size: 16px;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(78, 60, 60, 0.342);
     padding: 8px 16px;
-    border-radius: 8px;
+    border-radius: 20px;
     font-weight: 700;
     text-align: center;
 }
@@ -94,13 +95,13 @@ section{
   position: absolute;
   top: 30px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -230%);
   /* margin: 0; */
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 16px;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(78, 60, 60, 0.342);
   padding: 8px 16px;
-  border-radius: 8px;
+  border-radius: 20px;
   font-weight: 700;
   text-align: center;
 }
@@ -130,19 +131,17 @@ section{
 /* Tiêu đề */
 
 .title h2 {
-    border-top: 2px solid rgba(146, 144, 126, 0.486);   /* Viền trên màu vàng nhạt */
+    border-top: 2px solid rgba(185, 182, 151, 0.486);   /* Viền trên màu vàng nhạt */
     border-left: 2px solid rgba(146, 144, 126, 0.486);   /* Viền trái màu vàng nhạt */
     border-right: 2px solid transparent;               /* Các cạnh còn lại ẩn hoặc màu khác */
     border-bottom: 2px solid transparent;
-
     box-shadow: 3px 3px 2px 2px rgba(214, 197, 67, 0.651);
     margin: auto;
     width: 350px;
     height: 40px;
-    font-size: 25px;
-    font-weight: 600;
+    border-radius: 20px;
+    /* text-transform: uppercase; */
     margin-bottom: 10px;
-    color: #2e2e2e;
     text-align: center;
     line-height: 40px; /* canh giữa nội dung theo chiều dọc */
 }
@@ -539,7 +538,7 @@ section{
 /* Icon hình mặt */
 .uk-icon {
   position: relative;
-  width: 70px;
+  width: 45px;
 }
 
 /* Ảnh avatar */
@@ -547,8 +546,8 @@ section{
   position: absolute;
   top: -35px;
   left: -30px;
-  width: 50px ;
-  height: 50px ;
+  width: 100% ;
+  height: auto ;
   object-fit: cover;
   border-radius: 100%;
   box-shadow: 1px 2px 2px 2px rgb(212, 210, 205) ;
@@ -560,8 +559,8 @@ section{
   position: absolute;
   top: -35px;
   left: -30px;
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   border-radius: 100%;
   box-shadow: 0 -4px 10px rgb(156, 154, 149);
   z-index: 0;
@@ -936,12 +935,18 @@ section{
     text-align: center;
     /* background-image: url(../assets/images/nhaOng/backround-footer-3); */
     background-color: transparent;
-    background-image: linear-gradient(180deg, #d62121 0%, #000000 100%);
+    background-image: linear-gradient(180deg, #8d0707 5%, #000000 100%);
+}
+.footer-content p{
+    font-size: 22px;
+    color: white;
+    
 }
 .footer-content h2{
     margin-top: 15px;
     color: white;
     font-size: 22px;
+    text-transform: uppercase;
 }
 .footer-logo {
   display: flex;
@@ -959,7 +964,7 @@ section{
 
 .start{
     padding-top: 5px;
-    margin: 0px 0px 40px;
+    margin: 0px 0px 20px;
 }
 .star{
     width: 30px;
@@ -970,21 +975,15 @@ section{
 }
 .mxh {
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    /* margin-top: 20px;
+    margin-bottom: 20px; */
 }
 .ttlhe {
     display: flex;
+    padding-bottom: 10px;
     justify-content: center;
     align-items: center;
     gap: 40px; /* thêm khoảng cách giữa các khối */
-}
-
-.ttlhe > p {
-    font-size: 15px;
-    color: white;
-    font-weight: 300;
-    /* margin-right: 0; */
 }
 
 .email, .fabook {
@@ -1019,14 +1018,21 @@ section{
     display: inline-block;
 }
 .footer-note {
-    font-size: 14px;
-    color: #fff;
+    width: 800px;
+    margin: 0 auto;
+    line-height: 15px;
+}
+.footer-note p{
+    text-align: center;
+    font-size: 15px;
+    
 }
 .ket-thuc{
     margin: 10px;
     text-align: center;
-    font-size: 22px;
-    color: rgb(182, 40, 40);
+    font-size: 18px;
+    color: rgb(0, 0, 0);
     font-weight: normal;
-    
+    /* text-transform: uppercase; */
 }
+/*  */
