@@ -58,7 +58,7 @@ section{
     padding: 30px;
 }
 
-.conter p{
+.conter h4{
     padding-bottom: 20px;
     font-weight: 300;
     margin: auto;
@@ -68,13 +68,16 @@ section{
 }
 .img-container {
   display: flex;
-  max-width: 1000px;
+  justify-content: center;
+  max-width: 1200px;
+  flex-wrap: wrap;
   width: 100%;
-  margin: 40px auto;
+  margin: 40px;
+  gap: 30px;
 }
 .tenp{
     position: relative;
-    width: 500px;
+    width: 400px;
     height: auto;
 }
 .tenp .gth{
@@ -82,7 +85,7 @@ section{
     align-items: center;
     top: 30px;
     left: 40%;
-    transform: translate(-50%, -230%);
+    transform: translate(-10%, -230%);
     color: rgb(0, 0, 0);
     font-size: 16px;
     background: rgba(78, 60, 60, 0.342);
@@ -91,34 +94,90 @@ section{
     font-weight: 700;
     text-align: center;
 }
-.tenp .gqy{
-  position: absolute;
-  top: 30px;
-  left: 50%;
-  transform: translate(-50%, -230%);
-  /* margin: 0; */
-  color: rgb(0, 0, 0);
-  font-size: 16px;
-  background: rgba(78, 60, 60, 0.342);
-  padding: 8px 16px;
-  border-radius: 20px;
-  font-weight: 700;
+.img-large{
+    width: 100%;
+    height: auto !important;
+}
+/*  */
+.campaign-box {
+  width: 450px;
+  height: auto;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 5px 30px;
+  font-family: sans-serif;
+  font-size: 14px;
+  color: #333;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.note {
+  /* margin-bottom: 10px; */
+  color: #666;
+  font-size: 20px;
   text-align: center;
 }
-.tenp img {
-  object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+.support-info {
+  align-items: center;
+  display: flex;  
+  transform: translateY(19px);
 }
-.img-large{
-    width: 400px;
-    height: auto !important;
+.sup-chim{
+     filter: invert(64%) sepia(28%) saturate(749%) hue-rotate(295deg) brightness(102%) contrast(98%);
+    width: 40px;
 }
-.img-small{
-    width: 500px;
-    height: auto !important;
+.support-info span{
+    font-size: 17px;
 }
+.amount-info {
+  transform: translateY(45px);
+  display: flex;
+  justify-content: space-between;
+}
+.amount-info .left, .amount-info .right {
+  font-size: 15px;
+}
+.right{
+    text-align: right;
+}
+.amount-info strong {
+  font-size: 18px;
+  color: #333;
+}
+
+.progress-bar {
+  transform: translateY(45px);
+  height: 8px;
+  background: #f2f2f2;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #da6c8b;
+  transition: width 0.4s ease;
+}
+
+.status {
+  transform: translateY(40px);
+  display: flex;
+  justify-content: space-between;
+}
+
+.status .muted {
+  color: #999;
+  font-size: 15px;
+}
+
+.status .success {
+  text-align: right;
+  color: #0a0;
+}
+
 
 
 
@@ -159,15 +218,17 @@ section{
 /* Container row */
 .container .row {
     display: flex;
-    /* flex-wrap: wrap; */
-    max-width: 1100px;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
     margin: auto;
     width: 100%;
+    /* gap: 20px; */
 }
 /* Các cột con */
 .row-col {
     align-items: center;
-    width: 330px;
+    width: 360px;
     margin: 24px 0px 0px;
     padding: 20px 12px;
 }
@@ -264,7 +325,7 @@ section{
 }
 
 
-                        /* section2 */
+                        /* section v2 */
 .section-space.vb {
     background: linear-gradient(to bottom, #fff, #f8fbff);
     text-align: center;
@@ -273,7 +334,7 @@ section{
 .row-demo {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
     width: 100%;
     /* max-width: 1200px; */
     margin-top: 40px;
@@ -288,7 +349,7 @@ section{
     );
     border-radius: 20px;
     padding: 20px;
-    width: 26%;
+    width: 24%;
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
@@ -378,7 +439,7 @@ section{
     display: flex;
     align-items: center;
     gap: 6px;
-    font-size: 10px;
+    font-size: 6px;
     font-weight: 100;
     color: #888;
 }
@@ -412,20 +473,80 @@ section{
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
-.browse li span {
-    font-size: 15px;
-    color: #333;
-    text-align: start;
-    padding-left: 20px;
-}
 .browse li a {
     display: flex;
     align-items: center;
     text-decoration: none;
     color: inherit;
-    width: 100%;
+    width: 300px;
     transition: color 0.2s ease;
 }
+/*  */
+.hienThi{
+    padding-top: 5px;
+    width: 220px;
+    margin:10px auto;
+}
+.hienThi p{
+    font-size: 13px;
+    color: rgb(204, 45, 45);
+}
+.hienThi span{
+    text-align: start;
+    font-size: 15px;
+    white-space: nowrap;         /* Không cho xuống dòng */
+    overflow: hidden;            /* Ẩn phần tràn ra ngoài */
+    text-overflow: ellipsis;     /* Hiển thị dấu "..." nếu tràn */
+    display: block;              /* Đảm bảo hoạt động đúng */
+    max-width: 100%;
+}
+.chaptes{
+    display: flex;
+    justify-content: space-between;
+}
+.chap-dongho{
+    display: flex;
+    width:120px;
+    align-items: center;
+}
+.chap-dongho .icons{
+    width: 17px;
+    height: 17px;
+}
+/*  */
+.Views{
+    padding-top: 5px;
+    width: 220px;
+    margin:10px auto;
+}
+.Views span {
+    text-align: start;
+    font-size: 15px;
+    white-space: nowrap;         /* Không cho xuống dòng */
+    overflow: hidden;            /* Ẩn phần tràn ra ngoài */
+    text-overflow: ellipsis;     /* Hiển thị dấu "..." nếu tràn */
+    display: block;              /* Đảm bảo hoạt động đúng */
+    max-width: 100%;             /* Giới hạn chiều rộng tối đa */
+}
+
+.Views p{
+    font-size: 13px;
+    color: rgb(204, 45, 45);
+}
+.chapter{
+    display: flex;
+    justify-content: space-between;
+}
+.chap-mat{
+    display: flex;
+    width:70px;
+    align-items: center;
+}
+.chap-mat .icons{
+    width: 17px;
+    height: 17px;
+}
+/*  */
 .browse li:hover {
     border-radius: 5px;
     background-color: white;
@@ -623,47 +744,110 @@ section{
 }
 
                           /* section v6 */
-.section-space.vf{
-    text-align: center;
-    background-color: white;
+.section-space.vf {
+  text-align: center;
+  background-color: white;
+  padding: 40px 0;
 }
+
 .container-cart {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 15px;
+}
+
+.cart-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cart-col {
+  width: 168px;
+  background: #fff;
+  border: 1px dashed #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.cart-col:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cart-col img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+  display: block;
+}
+
+.caption {
+  padding: 10px;
+  background: white;
+}
+
+.caption h6 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  margin: 0;
+  text-align: center;
+  line-height: 1.4;
+}
+                   /* section v6-b */
+.container-cart-b {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px 15px;
 }
-.cart-row {
+
+.cart-row-b {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
 }
-.cart-col {
-    width: 168px;
-    height: 310px;
+
+.cart-col-b {
+    width: 205px;
     background: #fff;
     border: 1px dashed #ccc;
     border-radius: 8px;
     overflow: hidden;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    position: relative;
 }
-.cart-col a{
-    text-decoration: none;
-}
-.cart-col:hover {
+
+.cart-col-b:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
-.cart-col img {
-    /* margin-top: 5px; */
+
+.video-thumb {
     width: 100%;
     height: 250px;
     object-fit: cover;
-    border-bottom: 1px solid #eee;
+    display: block;
 }
+
+.video-frame {
+    display: none;
+    width: 100%;
+    height: 250px;
+    border: none;
+}
+
 .caption {
     padding: 10px;
+    background: white;
 }
+
 .caption h6 {
     font-size: 14px;
     font-weight: 500;
@@ -671,6 +855,11 @@ section{
     margin: 0;
     text-align: center;
     line-height: 1.4;
+}                  
+@media (max-width: 600px) {
+  .cart-col {
+    width: 45%;
+  }
 }
 
 
@@ -733,11 +922,11 @@ section{
 
 }
 .anh-over{
-    width: 185px;
-    height: 140px;
-    background-color: rgb(255, 254, 254);
-    border: 1px solid rgba(122, 116, 116, 0.158);
-    border-radius: 10px;
+    width: 170px;
+    height: 175px;
+    background: linear-gradient(135deg, #98a6e6b2, #f3363671);
+    border: 1px solid rgba(250, 245, 245, 0.158);
+    border-radius: 50px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
@@ -790,10 +979,11 @@ section{
 
 .serv-4 {
   width: 100px;
+  height: 250px;
   background: #fff;
   border-radius: 16px;
   box-shadow: 0 8px 12px rgba(131, 125, 125, 0.267);
-  padding: 15px 5px;
+  /* padding: 15px 5px; */
   position: relative;
   z-index: 1;
   text-align: center;
@@ -802,7 +992,7 @@ section{
 }
 
 /* Thêm lớp nền cam trượt từ dưới lên */
-.serv-4::before {
+/* .serv-4::before {
   content: '';
   position: absolute;
   bottom: 0;
@@ -813,7 +1003,7 @@ section{
   z-index: 0;
   transition: height 0.3s ease;
   border-radius: 16px;
-}
+} */
 
 /* Hover - đẩy nền từ dưới lên */
 .serv-4:hover::before {
@@ -825,27 +1015,28 @@ section{
 }
 
 .serv-4:hover {
-  transform: translateY(-10px);
+  /* transform: translateY(-10px); */
+  transform: scale(1.1);
 }
 
-.serv-4 img,
+.serv-4 .serv,
 .serv-4 .serv-box,
 .serv-4 h6 {
   position: relative;
-  z-index: 1; /* Đảm bảo nội dung nổi trên lớp nền */
+  z-index: 1000; /* Đảm bảo nội dung nổi trên lớp nền */
 }
 
-.serv-4:hover .serv-box h6 {
+/* .serv-4:hover .serv-box h6 {
   color: rgb(243, 243, 243);
-}
+} */
 
-.serv-4 img {
+/* .serv-4 .serv {
   margin-top: 25px;
   margin-left: 18px;
   margin-bottom: 10px;
   width: 70px;
   height: 60px;
-}
+} */
 
 .serv-4 h6 {
   margin-left: 20px;
@@ -875,6 +1066,22 @@ section{
   vertical-align: middle;
   opacity: 1; /* làm mờ nhẹ nếu là nền trang trí */
   animation: floatLine 4s ease-in-out infinite;
+}
+/*  */
+.link-banner {
+  display: block;
+  max-width: 100px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.link-image {
+  width: 100%;
+  height: 250px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
 }
 
 /* Keyframes cho hiệu ứng trôi lên xuống */
