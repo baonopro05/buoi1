@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Thanh Toán</title>
+  <link rel="stylesheet" href="css/thanhtoan.css">
+</head>
+<body>
+  <div class="checkout-wrap">
+    <h2 class="checkout-title">THANH TOÁN</h2>
+    <div class="checkout-note">Khách hàng không với khu vực “Giao hàng hoả tốc”</div>
+
+    <form class="form-checkout">
+      <div class="form-grid">
+        <div class="form-section">
+          <h3>Thông tin thanh toán</h3>
+          <label>Họ và tên*:<input type="text" required></label>
+          <label>Số điện thoại*:<input type="tel" required></label>
+          <label>Tỉnh/Thành phố*:<select required><option>Chọn Tỉnh/TP</option></select></label>
+          <label>Quận/Huyện*:<select required><option>Chọn Quận/Huyện</option></select></label>
+          <label>Xã/Phường/Thị trấn*:<select required><option>Chọn Xã/Phường</option></select></label>
+          <label>Địa chỉ*:<input type="text" required></label>
+        </div>
+
+        <div class="form-section">
+          <h3><input type="checkbox"> Mua tặng người khác?</h3>
+          <div class="gift-info">
+            Dịch vụ kèm: 01 món quà bông dễ thương<br>
+            <span class="gift-free">Thiệp miễn phí</span>
+          </div>
+          <label>Ghi chú:<textarea placeholder="Ghi chú về đơn hàng..."></textarea></label>
+        </div>
+      </div>
+
+      <div class="order-box">
+        <h3>Đơn hàng của bạn</h3>
+        <table class="order-table">
+          <thead>
+            <tr><th>SẢN PHẨM</th><th>TẠM TÍNH</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Thỏ Bông Cảm Xúc - 35cm, Cảm Xúc Nâu × 1</td><td>225.000 đ</td></tr>
+            <tr><td>Tạm tính</td><td>225.000 đ</td></tr>
+            <tr><td>Giao hàng</td><td>Phí dự kiến: 35.000 đ</td></tr>
+            <tr class="order-total"><td>Tổng</td><td>260.000 đ</td></tr>
+          </tbody>
+        </table>
+
+        <div class="payment-box">
+          <label><input type="radio" name="pay" checked> Chuyển khoản ngân hàng</label>
+          <label><input type="radio" name="pay"> Thanh toán khi nhận (SHIP COD)</label>
+        </div>
+
+        <p class="order-note">Cảm ơn Quý khách đã đặt hàng! Chúng tôi sẽ sớm liên hệ xác nhận.</p>
+        <p class="order-privacy">Thông tin cá nhân được sử dụng để xử lý đơn hàng và chăm sóc khách hàng.</p>
+        <button class="btn-order">Đặt hàng</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

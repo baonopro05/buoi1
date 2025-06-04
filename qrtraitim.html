@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Website Tỏ Tình</title>
+  <style>
+   body {
+  margin: 0;
+  background: linear-gradient(to top, rgba(255, 224, 240, 0.7), rgba(255, 195, 209, 0.7));
+  overflow: hidden;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+
+    /* Chữ rơi */
+    .falling-text {
+      position: absolute;
+      top: -50px;
+      color: white;
+      font-size: 2rem;
+      opacity: 0.9;
+      animation: fall linear forwards;
+      text-shadow: 2px 2px 4px #ff69b4;
+    }
+
+    @keyframes fall {
+      0% {
+        transform: translateY(-50px) rotate(0deg);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
+    /* Trái tim bay */
+    .heart {
+      position: absolute;
+      bottom: -20px;
+      color: #ff4dd3;
+      font-size: 1.5rem;
+      opacity: 0.8;
+      animation: rise 5s ease-in infinite;
+      transition: transform 0.3s ease-in;
+    }
+
+    @keyframes rise {
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-120vh) scale(1.5);
+        opacity: 0;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1 style="text-align:center; margin-top: 30px; color:white; text-shadow: 2px 2px 4px #ff9;">Anh yêu em 💖</h1>
+
+  <script>
+    const words = ["Anh yêu em", "Em là cả thế giới", "Mãi bên nhau", "💘", "💖", "💕"];
+    
+    // Chữ rơi từ trên
+    setInterval(() => {
+      const text = document.createElement("div");
+      text.className = "falling-text";
+      text.textContent = words[Math.floor(Math.random() * words.length)];
+      text.style.left = Math.random() * window.innerWidth + "px";
+      text.style.animationDuration = 3 + Math.random() * 2 + "s";
+      document.body.appendChild(text);
+      setTimeout(() => text.remove(), 6000);
+    }, 300);
+
+    // Trái tim bay từ dưới
+    setInterval(() => {
+      const heart = document.createElement("div");
+      heart.className = "heart";
+      heart.textContent = "❤️";
+      heart.style.left = Math.random() * window.innerWidth + "px";
+      heart.style.animationDuration = 3 + Math.random() * 2 + "s";
+      heart.style.fontSize = (1 + Math.random() * 2) + "rem";
+      document.body.appendChild(heart);
+      setTimeout(() => heart.remove(), 6000);
+    }, 400);
+
+    function showQR() {
+      document.getElementById("qrModal").style.display = "flex";
+    }
+  </script>
+
+</body>
+</html>

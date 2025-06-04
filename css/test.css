@@ -1,9 +1,13 @@
+/* Thanh menu chính */
 body{
   margin: 0;
   padding: 0;
-  font-family: Raleway;
+  font-family: Raleway !important;
+  background-color: #F4F7F9;
 }
-/* Thanh menu chính */
+.section-space{
+  padding: 12px;
+}
 .main-nav {
   background-image: linear-gradient(180deg, #8d0707 5%, #000000 100%);
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
@@ -71,11 +75,7 @@ body{
 
 /*  */
 
-section{
-    font-family: Raleway !important;
-    background-color: #F4F7F9;
-    padding: 40px 0;
-}
+
 /* giới thiệu */
 .conter{
     display: block;
@@ -199,154 +199,7 @@ section{
   color: #0a0;
 }
 
-
-
-
-
-
-                           /* section v1 */
-.section-space.va {
-    text-align: center;
-}
-/* Tiêu đề */
-
-.title h2 {
-    border-top: 2px solid rgba(185, 182, 151, 0.486);   /* Viền trên màu vàng nhạt */
-    border-left: 2px solid rgba(146, 144, 126, 0.486);   /* Viền trái màu vàng nhạt */
-    border-right: 2px solid transparent;               /* Các cạnh còn lại ẩn hoặc màu khác */
-    border-bottom: 2px solid transparent;
-    box-shadow: 3px 3px 2px 2px rgba(214, 197, 67, 0.651);
-    margin: auto;
-    width: 350px;
-    height: 40px;
-    border-radius: 20px;
-    /* text-transform: uppercase; */
-    margin-bottom: 10px;
-    text-align: center;
-    line-height: 40px; /* canh giữa nội dung theo chiều dọc */
-}
-
-.title p {
-    font-size: 16px;
-    color: #888;
-}
-.title a {
-    color: #f7941d;
-    font-size: 14px;
-    text-decoration: none;
-    font-weight: 500;
-}
-/* Container row */
-.container .row {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: auto;
-    width: 100%;
-    /* gap: 20px; */
-}
-/* Các cột con */
-.row-col {
-    align-items: center;
-    width: 360px;
-    margin: 24px 0px 0px;
-    padding: 20px 12px;
-}
-.row-col a{
-    text-decoration: none;
-}
-/* Hộp chức năng */
-.feature-box {
-    background: white;
-    padding: 40px 20px 20px 20px;
-    border-radius: 20px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
-    transition: all 0.3s ease;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-}
-
-.feature-box:hover {
-    transform: translateY(-10px);
-    background: linear-gradient(
-        45deg,
-        rgba(110, 82, 161, 0.144) 20.35%,
-        rgba(72, 163, 215, 0.1) 50%,
-        rgba(118, 85, 146, 0.212) 100%
-    );
-}
-
-/* Icon hình lục giác */
-.feature-icon {
-    position: absolute;
-    display: flex;
-    top: -45px;
-    left: 50%;
-    width: 80px;
-    height: 80px;
-    transform: translateX(-50%);
-    align-items: center;
-    justify-content: center;
-    background-image: url(./assets/images/nhaOng/lucgiac-xoanen.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    transition: background 0.6s ease, filter 0.6s ease;
-}
-
-/* Icon ảnh (hình lục giác nổi bật) */
-.feature-icon img {
-    display: flex;
-    position: absolute;
-    background: white;
-    padding: 10px;
-    clip-path: polygon(
-        50% 0%,
-        93% 25%,
-        93% 75%,
-        50% 100%,
-        7% 75%,
-        7% 25%
-    );
-    width: 50px;
-    height: 50px;
-    object-fit: contain;
-    transition: background 0.6s ease;
-}
-
-/* Hover trên feature-box thì đổi nền icon */
-.feature-box:hover .feature-icon img {
-    background: linear-gradient(
-        45deg,
-        rgba(96, 35, 209, 0.582) 20.35%,
-        rgba(72, 163, 215, 0.1) 50%,
-        rgba(102, 31, 160, 0.377) 100%
-    );
-}
-
-/* Tiêu đề trong hộp */
-.feature-box h5 {
-    font-size: 17px;
-    color: rgba(0, 0, 0, 0.63);
-    margin-bottom: 10px;
-    text-decoration: none;
-}
-/* Mô tả trong hộp */
-.feature-box span {
-    font-size: 15px;
-    color: rgba(0, 0, 0, 0.397);
-    line-height: 1.5;
-}
-/* Bỏ gạch chân link */
-.feature-box a {
-    text-decoration: none;
-    color: inherit;
-}
-
-
-                        /* section v2 */
+/* v2 */
 .section-space.vb {
     background: linear-gradient(to bottom, #fff, #f8fbff);
     text-align: center;
@@ -393,7 +246,7 @@ section{
 }
 .img-wr{
     width: 100%;
-    height: 155px;
+    /* height: 155px; */
     overflow: hidden;
     position: relative;
 }
@@ -403,7 +256,7 @@ section{
     transition: transform 0.3s ease;
 }
 .demo-title {
-    margin-top: 12px;
+    margin-top: 5px;
 }
 .demo-title a {
     color: #f7941d;
@@ -412,9 +265,7 @@ section{
     text-decoration: none;
 }
 
-
-
-                          /* section v3 */
+/* v3 */
 .section-space.vc {
     text-align: center;
 }
@@ -574,6 +425,132 @@ section{
     border: 1px dashed #e95555;
 }
 
+/* v1 */
+.section-space.va {
+    text-align: center;
+}
+/* Tiêu đề */
+
+
+
+.title p {
+    font-size: 16px;
+    color: #888;
+}
+.title a {
+    color: #f7941d;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 500;
+}
+/* Container row */
+.container .row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    width: 100%;
+    /* gap: 20px; */
+}
+/* Các cột con */
+.row-col {
+    align-items: center;
+    width: 360px;
+    margin: 24px 0px 0px;
+    padding: 20px 12px;
+}
+.row-col a{
+    text-decoration: none;
+}
+/* Hộp chức năng */
+.feature-box {
+    background: white;
+    padding: 40px 20px 20px 20px;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+}
+
+.feature-box:hover {
+    transform: translateY(-10px);
+    background: linear-gradient(
+        45deg,
+        rgba(110, 82, 161, 0.144) 20.35%,
+        rgba(72, 163, 215, 0.1) 50%,
+        rgba(118, 85, 146, 0.212) 100%
+    );
+}
+
+/* Icon hình lục giác */
+.feature-icon {
+    position: absolute;
+    display: flex;
+    top: -45px;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    transform: translateX(-50%);
+    align-items: center;
+    justify-content: center;
+    background-image: url(./assets/images/nhaOng/lucgiac-xoanen.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background 0.6s ease, filter 0.6s ease;
+}
+
+/* Icon ảnh (hình lục giác nổi bật) */
+.feature-icon img {
+    display: flex;
+    position: absolute;
+    background: white;
+    padding: 10px;
+    clip-path: polygon(
+        50% 0%,
+        93% 25%,
+        93% 75%,
+        50% 100%,
+        7% 75%,
+        7% 25%
+    );
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    transition: background 0.6s ease;
+}
+
+/* Hover trên feature-box thì đổi nền icon */
+.feature-box:hover .feature-icon img {
+    background: linear-gradient(
+        45deg,
+        rgba(96, 35, 209, 0.582) 20.35%,
+        rgba(72, 163, 215, 0.1) 50%,
+        rgba(102, 31, 160, 0.377) 100%
+    );
+}
+
+/* Tiêu đề trong hộp */
+.feature-box h5 {
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.63);
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+/* Mô tả trong hộp */
+.feature-box span {
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.397);
+    line-height: 1.5;
+}
+/* Bỏ gạch chân link */
+.feature-box a {
+    text-decoration: none;
+    color: inherit;
+}
 
                            /* section v4 */
 .section-space.vd{
@@ -625,9 +602,7 @@ section{
     max-width: 1200px;
 }
 
-
-
-                           /* section v5 */
+/* v5 */
 .section-space.ve {
     text-align: center;
     position: relative;
@@ -752,25 +727,11 @@ section{
     color: #eb9320ce;
 }
 
-@media (max-width: 768px) {
-    .cmt-usr {
-        grid-template-columns: 1fr; /* Trên mobile thì chỉ 1 cột */
-    }
-}
-@keyframes spinOrbit {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-                          /* section v6 */
+/* v6 */
 .section-space.vf {
   text-align: center;
   background-color: white;
-  padding: 40px 0;
+  padding: 10px 0;
 }
 
 .container-cart {
@@ -795,13 +756,12 @@ section{
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
 }
-.cart-col a{
-  text-decoration: none;
-}
+
 .cart-col:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+
 .cart-col img {
   width: 100%;
   height: 250px;
@@ -809,9 +769,13 @@ section{
   border-bottom: 1px solid #eee;
   display: block;
 }
+
 .caption {
   padding: 10px;
   background: white;
+}
+.cart-col a{
+  text-decoration: none;
 }
 .caption h6 {
   font-size: 14px;
@@ -827,12 +791,14 @@ section{
     margin: 0 auto;
     padding: 20px 15px;
 }
+
 .cart-row-b {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
 }
+
 .cart-col-b {
     width: 205px;
     background: #fff;
@@ -843,42 +809,42 @@ section{
     cursor: pointer;
     position: relative;
 }
+
 .cart-col-b:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+
 .video-thumb {
     width: 100%;
     height: 250px;
     object-fit: cover;
     display: block;
 }
+
 .video-frame {
     display: none;
     width: 100%;
     height: 250px;
     border: none;
 }
+
 .caption {
     padding: 10px;
     background: white;
 }
+
 .caption h6 {
     font-size: 14px;
     font-weight: 500;
     color: #333;
     margin: 0;
     text-align: center;
-    line-height: 1.4;
-}                  
-@media (max-width: 600px) {
-  .cart-col {
-    width: 45%;
-  }
-}
+    /* line-height: 1.4; */
+    text-decoration: none;
+}     
 
-
-                    /* section v7 */
+/* v7 */
 
 .products-services {
   display: flex;
@@ -985,9 +951,9 @@ section{
 
 .row-serv {
   display: flex;
-  justify-content: space-evenly;
-  gap: 35px;
-  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: nowrap;
   position: relative;
   margin-top: 12px;
 }
@@ -1108,11 +1074,6 @@ section{
     transform: translateY(-10px);
   }
 }
-
-
-
-
-
                     /* section v8 */
 .section-space.vh {
     background: #fff;
@@ -1148,9 +1109,7 @@ section{
     cursor: pointer;
 }
 
-
-           /* footer mới làm */
-
+/* footer */
 .footer-content{
     padding: 40px 0 3px;
     display: block;
@@ -1266,12 +1225,14 @@ section{
     justify-content: space-between;
   }
   .logo img {
+    margin-left: 30px;
     height: 48px;
   }
   .menu {
     gap: 18px;
   }
   .hamburger {
+    margin-right: 15px;
     display: flex;
   }
   .menu {
@@ -1301,6 +1262,54 @@ section{
   }
 
   /* gt */
+    .conter {
+    padding: 18px;
+  }
+  .conter h4 {
+    font-size: 15px;
+    width: 90%;
+    max-width: 600px;
+  }
+  .img-container {
+    /* display: flex; */
+    justify-content: center;
+    max-width: 1024px;
+    margin: 30px auto;
+    gap: 8px;
+  }
+  .tenp {
+    margin: 0 auto;
+    max-width: 380px;
+  }
+  .tenp .gth {
+    font-size: 15px;
+    top: 20px;
+    left: 35%;
+    padding: 6px 12px;
+  }
+  .img-large{
+    max-height: 300px;
+  }
+  .campaign-box {
+    width: 80%;
+    max-width: 400px;
+    padding: 5px 16px;
+    font-size: 13px;
+    margin: 0 auto;
+  }
+  .note {
+    font-size: 17px;
+    margin: 20px auto;
+  }
+  .support-info span {
+    font-size: 15px;
+  }
+  .amount-info .left, .amount-info .right {
+    font-size: 13px;
+  }
+  .amount-info strong {
+    font-size: 16px;
+  }
   /* v2 */
 .container-demo {
   max-width: 1024px;
@@ -1429,17 +1438,20 @@ section{
     padding: 0 10vw;
     max-width: 95vw;
   }
-  .container-content .content {
+  .content {
+    width: 40vw;
     display: flex;
     align-items: center;
-    justify-content: center;
   }
-  .container-content .content img {
+  .content img {
     width: 14px;
     height: 14px;
-    margin-right: 100px;
+    margin-right: 40px;
     margin-bottom: 0;
     float: none;
+  }
+  .content-grow{
+    width: 300px;
   }
   .container-content .content-grow h6,
   .container-content .content-grow p {
@@ -1453,7 +1465,7 @@ section{
   }
 
   /* v5 */
-    .container-comment {
+  .container-comment {
     padding: 40px 10px;
   }
   .row-cmt {
@@ -1527,7 +1539,7 @@ section{
     width: 100%;
     justify-content: center;
     gap: 18px;
-    height: auto;
+    height: 225px;
   }
   .prod-3 {
     width: 100%;
@@ -1559,10 +1571,9 @@ section{
   }
   .row-serv {
     max-width: 915px;
-    gap: 8px;
   }
   .serv-4 {
-    width: 165px; /* 4 ảnh trên 1 hàng, có gap */
+    width: 185px; /* 4 ảnh trên 1 hàng, có gap */
     background: none;
     border-radius: 16px;
     box-shadow: 0 0px 12px rgba(131, 125, 125, 0);
@@ -1586,7 +1597,77 @@ section{
   .serv-line img {
     max-width: 90vw;
   }
+  /* v8 */
+      .container-topic {
+        margin: 0 20px;
+        gap: 8px;
+    }
+    .container-topic span {
+        font-size: 13px;
+        padding: 0px 10px;
+    }
 
+        /* footer */
+    .footer-content {
+      padding: 16px 0 1px;
+    }
+    .footer-logo {
+      width: 80px;
+      height: 80px;
+    }
+    .footer-content h2, .footer-content p {
+      font-size: 22px;
+      margin: 5px auto;
+    }
+    .footer-note {
+      width: 90%;
+      font-size: 11.5px;
+      padding: 0 2px;
+      margin: 10px auto;
+    }
+    .footer-note p{
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    .ttlhe {
+      width: 100%;
+      display: flex;
+      gap: 20px;
+      padding-bottom: 6px;
+      margin: 0 auto;
+      justify-content: center;
+    }
+    .email, .fabook {
+      display: flex;
+      gap: 6px;
+    }
+    .ttlhe img {
+      width: 22px;
+      height: 22px;
+      margin-bottom: 0;
+    }
+    .mxh-fb {
+      font-size: 20px;
+    }
+    .tthdan {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+    .tthdan a {
+      padding: 0 3px;
+      font-size: 18px;
+    }
+    .start{
+      margin: 0px 0px 10px;
+    }
+    .star {
+      width: 30px;
+    }
+    .ket-thuc {
+      font-size: 20px;
+      margin: 4px;
+    }
+    
 }
 
 /* --- Tablet/Small Tablet: 768px --- */
@@ -1617,22 +1698,76 @@ section{
   .hamburger span {
     height: 3px;
   }
-  /*  */
-  .container-fluid{
-    width: 500px;
+
+  /* gt */
+  .conter {
+    margin: 0;
+  }
+  .conter h4 {
+    font-size: 13px;
+    width: 80vw;
+    max-width: 768px;
+    padding-bottom: 16px;
+  }
+  .img-container {
+    margin: 2px auto;
+    gap: 20px;
+    width: 100%;
+    max-width: 768px;
+
+  }
+  .tenp {
+    display: flex;
+    justify-content: center;
+    max-width: 768px;
+    width: 100%;
+  }
+  .gth{
+    display: none;
+  }
+  .img-large {
+    width: 90%;
+    max-height: 280px;
+    border-radius: 6px;
+  }
+  .campaign-box {
+    max-height: 235px;
+    width: 85%;
+    max-width: 768px;
+    padding: 5px 3vw;
     margin: 0 auto;
+    font-size: 10.5px;
   }
-  .title h2{
-    font-size: 22px;
+  .note {
+    font-size: 20px;
+    margin: 10px auto;
   }
-  .title p{
+  .support-info span {
+    font-size: 16px;
+  }
+  .amount-info .left, .amount-info .right {
+    font-size: 18px;
+  }
+  .amount-info strong {
+    font-size: 18px;
+  }
+  .sup-chim {
+    width: 38px;
+  }
+  .progress-bar {
+    height: 6px;
+    margin-bottom: 5px;
+  }
+  .status .muted {
     font-size: 15px;
   }
-  .title a{
-    text-decoration: none;
+  .status .success {
     font-size: 13px;
   }
-  /* gt */
+  .status {
+    font-size: 13px;
+  }
+  
   /* v2 */
    .demo {
         width: 47%;
@@ -1701,6 +1836,7 @@ section{
   /* v1 */
   .container-fluid{
     width: 45vw;
+    padding-top: 5px;
     margin: 0 auto;
   }
   .title h2{
@@ -1712,7 +1848,42 @@ section{
   .row-col{
     width: 45%;
   }
+  /* v4 */
+    .container-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10vw;
+    max-width: 95vw;
+  }
+  .content {
+    width: 40vw;
+    display: flex;
+    align-items: center;
+  }
+  .content img {
+    width: 14px;
+    height: 14px;
+    margin-right: 5px;
+    margin-bottom: 0;
+    float: none;
+  }
+  .content-grow{
+    width: 300px;
+  }
+  .container-content .content-grow h6,
+  .container-content .content-grow p {
+    font-size: 14px;
+  }
+  .container-content > p {
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+    max-width: 90vw;
+  }
   /* v6 */
+  .section-space.vf{
+    padding: 10px;
+  }
   .container-cart,
   .container-cart-b {
     max-width: 768px;
@@ -1832,32 +2003,170 @@ section{
   .serv-line img {
     display: none;
   }
+  /* v8 */
+      .container-topic {
+        margin: 0 20px;
+        gap: 7px;
+    }
+    .container-topic a span {
+        font-size: 12px;
+        padding: 0px 8px;
+    }
+
+        /* footer */
+    .footer-content {
+      padding: 16px 0 1px;
+    }
+    .footer-logo {
+      width: 70px;
+      height: 70px;
+    }
+    .footer-content h2, .footer-content p {
+      font-size: 18px;
+      margin: 5px auto;
+    }
+    .footer-note {
+      width: 90%;
+      font-size: 11.5px;
+      padding: 0 2px;
+      margin: 10px auto;
+    }
+    .footer-note p{
+      font-size: 14px;
+      line-height: 1.2;
+    }
+    .ttlhe {
+      width: 100%;
+      display: flex;
+      gap: 20px;
+      padding-bottom: 6px;
+      margin: 0 auto;
+      justify-content: center;
+    }
+    .email, .fabook {
+      display: flex;
+      gap: 6px;
+    }
+    .ttlhe img {
+      width: 22px;
+      height: 22px;
+      margin-bottom: 0;
+    }
+    .mxh-fb {
+      font-size: 18px;
+    }
+    .tthdan {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+    .tthdan a {
+      padding: 0 3px;
+      font-size: 18px;
+    }
+    .start{
+      margin: 0px 0px 10px;
+    }
+    .star {
+        width: 20px;
+    }
+    .ket-thuc {
+        font-size: 18px;
+        margin: 4px;
+    }
 }
 
 /* --- Mobile: 480px --- */
 @media (max-width: 480px) {
   .container-fluid{
-    width: 300px;
+    width: 45vw;
     margin: 0 auto;
   }
   .title h2{
-    font-size: 18px;
+    width: 45vw;
+    font-size: 16px;
   }
   .title p{
-    margin: 0 auto;
-    width: 220px;
-    font-size: 12px;
+    font-size: 11px;
+    width: 45vw;
   }
   .title a{
     text-decoration: none;
     font-size: 11px;
   }
+
+  /* gt */
+  .conter {
+    margin: 0;
+  }
+  .conter h4 {
+    font-size: 10px;
+    width: 80vw;
+    max-width: 88vw;
+    padding-bottom: 6px;
+  }
+  .img-container {
+    align-items: center;
+    margin: 2px auto;
+    gap: 7px;
+    max-width: 480px;
+  }
+  .tenp {
+    margin: 0 auto;
+    max-width: 480px;
+  }
+  .gth{
+    display: none;
+  }
+  .img-large {
+    max-height: 180px;
+    border-radius: 6px;
+  }
+  .campaign-box {
+    max-width: 480px;
+    padding: 5px 3vw;
+    margin: 0 auto;
+    font-size: 10.5px;
+  }
+  .note {
+    font-size: 12px;
+    margin: 10px auto;
+  }
+  .support-info span {
+    font-size: 10px;
+  }
+  .amount-info .left, .amount-info .right {
+    font-size: 10px;
+  }
+  .amount-info strong {
+    font-size: 11px;
+  }
+  .sup-chim {
+    width: 18px;
+  }
+  .progress-bar {
+    height: 6px;
+    margin-bottom: 5px;
+  }
+  .status .muted {
+    font-size: 10px;
+  }
+  .status .success {
+    font-size: 11px;
+  }
+  .status {
+    font-size: 10px;
+  }
+
   /* v2 */
+  .section-space.vb{
+    padding: 10px 0;
+  }
   .container-demo {
     max-width: 480px;
   }
 
   .row-demo {
+    margin: 0;
     display: block;       /* Cho phép các cột xuống hàng */
     justify-content: center; /* Canh trái các phần tử */
   }
@@ -1896,6 +2205,7 @@ section{
   .row-demi {
     flex-direction: column;
     align-items: stretch;
+    margin-top: 20px;
   }
   .row-browse {
     flex-direction: column;
@@ -1985,21 +2295,26 @@ section{
     padding: 0 1vw;
     max-width: 100vw;
   }
-  .container-content .content {
+ .content {
     display: flex;
-    align-items: center;
+    width: 68vw;
+    margin-left: 50px;
     justify-content: center;
   }
-  .container-content .content img {
+  .content-grow{
+    margin: 0 auto;
+    width: 60vw;
+  }
+ .content img {
     width: 10px;
     height: 10px;
-    margin-right: 50px;
+    margin-right: 5px;
     margin-bottom: 0;
     float: none;
   }
-  .container-content .content-grow h6,
-  .container-content .content-grow p {
-    font-size: 11px;
+  .content .content-grow h6,
+  .content .content-grow p {
+    font-size: 12px;
   }
   .container-content > p {
     font-size: 11px;
@@ -2014,6 +2329,7 @@ section{
   }
   .row-cmt {
     max-width: 700px;
+    margin: 0 20px;
   }
   .cmt-usr {
     grid-template-columns: 1fr;
@@ -2041,11 +2357,12 @@ section{
   .container-cart,
   .container-cart-b {
     max-width: 480px;
-    padding: 12px 4vw;
+    padding: 12px 0;
   }
   .cart-row,
   .cart-row-b {
     gap: 25px;
+    margin-top: 10px;
   }
   .cart-col {
     width: 38vw;
@@ -2068,7 +2385,6 @@ section{
      /* v7 */
   .products-services {
     flex-direction: column;
-    gap: 32px;
     align-items: stretch;
   }
   .products,
@@ -2076,7 +2392,7 @@ section{
     margin: 0 auto;
   }
   .container-product {
-    padding: 20px 0;
+    padding: 8px 0;
     margin: 0 auto;
   }
   .row-prod {
@@ -2109,6 +2425,10 @@ section{
 .container-service {
     max-width: 100%;
   }
+  .col-serv{
+    max-width: 90vw;
+    height: 75vw !important;
+  }
   .row-serv {
     display: flex;
     flex-wrap: wrap;
@@ -2123,9 +2443,6 @@ section{
     border-radius: 16px;
     box-shadow: 0 0px 12px rgba(131, 125, 125, 0);
     text-align: center;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-    position: relative;
   }
   .serv-4.sutdow {
     top: 0;
@@ -2136,9 +2453,82 @@ section{
     max-width: 200px;
     margin: 0 auto;
   }
+  .link-image{
+    max-width: 100%;
+    width: 180px !important;
+    height: 34vw;
+  }
   .serv-line img {
     display: none;
   }
+  /* v8 */
+      .container-topic {
+        padding: 0;
+        gap: 5px;
+    }
+    .container-topic span {
+        font-size: 12px;
+        padding: 0px 8px;
+    }
+
+    /* footer */
+        .footer-content {
+        padding: 16px 0 1px;
+    }
+    .footer-logo {
+        width: 60px;
+        height: 60px;
+    }
+    .footer-content h2, .footer-content p {
+        font-size: 18px;
+        margin: 5px auto;
+    }
+    .footer-note {
+        width: 90%;
+        font-size: 11.5px;
+        padding: 0 2px;
+    }
+    .footer-note p{
+      font-size: 11px;
+    }
+    .ttlhe {
+      width: 100%;
+      display: flex;
+      gap: 15px;
+      padding-bottom: 6px;
+      margin: 0 auto;
+      justify-content: center;
+    }
+    .email, .fabook {
+      display: flex;
+      gap: 6px;
+    }
+    .ttlhe img {
+        width: 22px;
+        height: 22px;
+        margin-bottom: 0;
+    }
+    .mxh-fb {
+        font-size: 12px;
+    }
+    .tthdan {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .tthdan a {
+        padding: 0 3px;
+        font-size: 11px;
+    }
+    .start{
+      margin: 0px 0px 10px;
+    }
+    .star {
+        width: 14px;
+    }
+    .ket-thuc {
+        font-size: 15px;
+        margin: 4px;
+    }
 }
 
 

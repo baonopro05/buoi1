@@ -1,0 +1,124 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  margin: 0;
+  padding: 20px;
+}
+
+.checkout-wrap {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #eee;
+}
+
+.checkout-title {
+  color: #e91e63;
+  margin-bottom: 10px;
+}
+
+.checkout-note {
+  background: #dff0d8;
+  color: #3c763d;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+.form-checkout .form-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.form-section {
+  flex: 1;
+  min-width: 300px;
+}
+
+.form-section h3 {
+  color: #e91e63;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="tel"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  height: 80px;
+  resize: vertical;
+}
+
+.gift-info {
+  background: #f9f9f9;
+  padding: 10px;
+  border-left: 4px solid #f06292;
+  margin-bottom: 10px;
+}
+
+.gift-free {
+  color: #4caf50;
+  font-weight: bold;
+}
+
+.order-box {
+  margin-top: 30px;
+}
+
+.order-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.order-table th,
+.order-table td {
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.order-total {
+  font-weight: bold;
+  background-color: #f8f8f8;
+}
+
+.payment-box label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.order-note,
+.order-privacy {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.btn-order {
+  background: #f06292;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn-order:hover {
+  background: #e91e63;
+}
